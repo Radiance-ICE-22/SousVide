@@ -16,8 +16,8 @@
     ],
     "frameworks": [],
     "description": "SOUS VIDE (Scene Understanding via Synthesized Visual Inertial Data from Experts) - a Stanford MSL research project for training and deploying learned drone flight-control policies using synthesized data from Gaussian-splat simulation (FiGS).",
-    "analyzedAt": "2026-08-23T09:32:48.597288Z",
-    "gitCommitHash": "a2400aa6e100c81b388bd105fdbe153710479004"
+    "analyzedAt": "2026-08-23T10:18:49.364989Z",
+    "gitCommitHash": "ab3480d2822f98f0919f7962f4fbf85fc8df246a"
   },
   "nodes": [
     {
