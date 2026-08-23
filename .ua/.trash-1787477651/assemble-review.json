@@ -1,0 +1,16 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge script report contained no 'Fixed' or 'Could not fix' pattern sections in this run - input (138 nodes, 302 edges) exactly equals output (138 nodes, 302 edges), indicating zero dedup collisions and zero dangling-edge drops occurred during assembly.",
+    "Independently re-verified all 138 nodes across the 11 batch files: every node has a non-empty id, every type is one of the five known types (file, function, class, config, document), and every complexity value is one of simple/moderate/complex. No recovery work was needed.",
+    "Independently re-verified assembled-graph.json: no dangling edges (all 302 edge source/target ids resolve to existing nodes), no duplicate (source,target,type) edge keys, no duplicate node ids, and no edges missing required fields.",
+    "Cross-checked all 48 import relationships from the supplied $IMPORT_MAP (17 files with at least one import) against the assembled graph's 48 'imports' edges: every relationship already has a corresponding forward imports edge with weight 0.7. No cross-batch edges needed to be added, consistent with the script's own report of 0 recovered (the batches' own LLM analysis had already captured these file-level import edges).",
+    "The merge script's 'Recovered 0 imports edges from importMap (65 entries scanned)' line refers to its own internal recovery pass finding nothing new to add on top of what batches already produced - this is expected and not a data-quality concern.",
+    "Overall data quality is high: this project's batch outputs were well-formed with no malformed node IDs, no unknown types/complexity values, and no orphaned references. No manual fixes were applied to assembled-graph.json."
+  ]
+}

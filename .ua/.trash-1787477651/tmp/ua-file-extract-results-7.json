@@ -1,0 +1,122 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "configs/courses/button_prod.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 35,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "waypoints",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "forces",
+          "level": 1,
+          "line": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "configs/courses/circuit.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 98,
+      "nonEmptyLines": 98,
+      "sections": [
+        {
+          "heading": "waypoints",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "forces",
+          "level": 1,
+          "line": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "configs/courses/infinity.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 71,
+      "nonEmptyLines": 71,
+      "sections": [
+        {
+          "heading": "waypoints",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "forces",
+          "level": 1,
+          "line": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "configs/courses/traverse.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 62,
+      "nonEmptyLines": 62,
+      "sections": [
+        {
+          "heading": "waypoints",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "forces",
+          "level": 1,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

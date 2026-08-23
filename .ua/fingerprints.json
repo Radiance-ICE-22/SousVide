@@ -1,0 +1,2742 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "a2400aa6e100c81b388bd105fdbe153710479004",
+  "generatedAt": "2026-08-23T09:33:54.744Z",
+  "files": {
+    ".gitmodules": {
+      "filePath": ".gitmodules",
+      "contentHash": "b54173aac4dea09e906a4b5d3e359135db398869671e75199fbff94b81059597",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    },
+    ".ua/.understandignore": {
+      "filePath": ".ua/.understandignore",
+      "contentHash": "c3437eb053fdb2eb78be7abdd7c7f357996cc47b7909f49fa0bd74ecbedb4128",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 76,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "ab0a5e85312ae53427ba947668be2359a3184b4195628d0007ca6d7539d69a97",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "configs/captures/default.json": {
+      "filePath": "configs/captures/default.json",
+      "contentHash": "0ac2a0db29cced8abf5ff21d00d655181c59fdf1134128cd53cb7d283cf056ef",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "configs/captures/iphone15pro.json": {
+      "filePath": "configs/captures/iphone15pro.json",
+      "contentHash": "0250b610c76e0461c88c93d5ad6b8bc86d3a15caabc6921c03d88b2ccec1371d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "configs/captures/pixel8pro.json": {
+      "filePath": "configs/captures/pixel8pro.json",
+      "contentHash": "bdcd7b3f0b9101c043993c04ae394e5298d8728212ad7f12b1d5c2628521a120",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "configs/courses/button_prod.json": {
+      "filePath": "configs/courses/button_prod.json",
+      "contentHash": "134fc3521f0e251dafdea172591c8dda4e011fdedcd5abb3972148702cb0e94c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": true
+    },
+    "configs/courses/circuit.json": {
+      "filePath": "configs/courses/circuit.json",
+      "contentHash": "ffcf52202736375e701368c3fb2a5c52f09decba4e890f52fb8d5a547e3bd603",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "configs/courses/infinity.json": {
+      "filePath": "configs/courses/infinity.json",
+      "contentHash": "10ad0323d4d20cba73a86fb9006ff69215ef0aec20bfa3e5f1dde61059296a30",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 71,
+      "hasStructuralAnalysis": true
+    },
+    "configs/courses/traverse.json": {
+      "filePath": "configs/courses/traverse.json",
+      "contentHash": "416098019069f565bfe8c3dd6b1225529645c2e528c115e82c436bd7abdb613f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    "configs/frames/carl.json": {
+      "filePath": "configs/frames/carl.json",
+      "contentHash": "bbc8c35f4be18fb06e2400c161db107698a122349f6add0b5ed078e552bc8e63",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/data_alpha.json": {
+      "filePath": "configs/methods/data_alpha.json",
+      "contentHash": "a496fea5d890e2b2be6172457ba6efba5fa2d10afc0228f256558c55d7899db3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/data_beta.json": {
+      "filePath": "configs/methods/data_beta.json",
+      "contentHash": "1a9afe85d7d51aaa14d67aeee8a0cfb568f2b946b5075f06e988b65a79014032",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/data_gamma.json": {
+      "filePath": "configs/methods/data_gamma.json",
+      "contentHash": "8e025acd75e5fe51c3b204721272c4c8d21ab494cce8d280e9712316e20d97b4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/eval_challenged.json": {
+      "filePath": "configs/methods/eval_challenged.json",
+      "contentHash": "f069dd1b3b37343388a49166702b8e8c89e4dff80299bbe36eebfad549322dee",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/eval_extreme.json": {
+      "filePath": "configs/methods/eval_extreme.json",
+      "contentHash": "f51494781e1aa19fb3bda43f83cc2ade7e4e69fc2fb459573613982e881b307a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 45,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/eval_mocap.json": {
+      "filePath": "configs/methods/eval_mocap.json",
+      "contentHash": "2a7e0056180c0bd1e4a5a2cc54cc244c3885578082321b6936b0876f74733dbf",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/eval_nominal.json": {
+      "filePath": "configs/methods/eval_nominal.json",
+      "contentHash": "0a87b03c61ecc00a0a673eb53365b7765f18f8f240b944452eca49a5345af56d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "configs/methods/eval_single.json": {
+      "filePath": "configs/methods/eval_single.json",
+      "contentHash": "cb2b86aa15aa6ef1296d41e613a87c97ec085bd2e5bc316529ac2528e684e5ab",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "configs/nnio/basic.json": {
+      "filePath": "configs/nnio/basic.json",
+      "contentHash": "6700278254785b950b98d803c923b0cfad820c5d33e3b056ad11ca29a4b84c12",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "configs/nnio/image.json": {
+      "filePath": "configs/nnio/image.json",
+      "contentHash": "ec7ed43e35d6d37c7bbb9b28ac2b2c9621404022cbf96c6c4f0eb1346ca45e0a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "configs/nnio/sequence.json": {
+      "filePath": "configs/nnio/sequence.json",
+      "contentHash": "caf69c6e76d7250b84f62e21be776772b82b03674d67e94de612594e0d78999c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "configs/pilots/Iceman.json": {
+      "filePath": "configs/pilots/Iceman.json",
+      "contentHash": "2a945f6922ec4030774b766e2b7fe44481445cce0fe474550a4d57bfe369ec66",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 74,
+      "hasStructuralAnalysis": true
+    },
+    "configs/pilots/Jester.json": {
+      "filePath": "configs/pilots/Jester.json",
+      "contentHash": "9b7c39c9edf320b51f8bb1fbf70abbd712b305ce1384712229f63491e57b786a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "configs/pilots/Maverick.json": {
+      "filePath": "configs/pilots/Maverick.json",
+      "contentHash": "3e68bba689896d45ee0a1b7bcf43fa009b9cdc86f44a0b7ba6cfffdaa608fb5f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "configs/pilots/Rooster.json": {
+      "filePath": "configs/pilots/Rooster.json",
+      "contentHash": "ffc5e0514ff379d32216f806c654d3396acd237d818e5e4556cb97d5c3639e98",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 74,
+      "hasStructuralAnalysis": true
+    },
+    "configs/pilots/Viper.json": {
+      "filePath": "configs/pilots/Viper.json",
+      "contentHash": "0b26dd24f84e441459291e6cefdaf35168e9ec91c89e43eb649012c3562676f9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "docs/index.html": {
+      "filePath": "docs/index.html",
+      "contentHash": "e75c0e5f930fa77a7df1a449a9298eb02474c5fc3794020e32a59b7d120ec3ea",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 310,
+      "hasStructuralAnalysis": false
+    },
+    "docs/static/css/bulma.css.map.txt": {
+      "filePath": "docs/static/css/bulma.css.map.txt",
+      "contentHash": "2dd7317e7daa3390397b28665ad4398be313b93114747cb9e0052030b771143f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "docs/static/css/index.css": {
+      "filePath": "docs/static/css/index.css",
+      "contentHash": "747bae5899d9a93f21caa423e264b2b7ed7ec2b12e1f57be1a715f8103c5c744",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 158,
+      "hasStructuralAnalysis": false
+    },
+    "docs/static/js/bulma-carousel.js": {
+      "filePath": "docs/static/js/bulma-carousel.js",
+      "contentHash": "ee6667c8ae6dabe1bb14d8792b32687fb9d130c31f3dcf582b03c611c2f0edf1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2371,
+      "hasStructuralAnalysis": true
+    },
+    "docs/static/js/bulma-slider.js": {
+      "filePath": "docs/static/js/bulma-slider.js",
+      "contentHash": "a77efa04a36ff2815e057a0bf0ee911216f3c03904b94726018d636057f1e723",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 461,
+      "hasStructuralAnalysis": true
+    },
+    "docs/static/js/index.js": {
+      "filePath": "docs/static/js/index.js",
+      "contentHash": "e3bfc9cf8875689f97ef1a79cafd61f00c0bb25e4a89ba151113b4e990db3f5a",
+      "functions": [
+        {
+          "name": "preloadInterpolationImages",
+          "params": [],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "setInterpolationImage",
+          "params": [
+            "i"
+          ],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "environment_x86.yml": {
+      "filePath": "environment_x86.yml",
+      "contentHash": "d223b8e37e61a71bcd3230d07ad333e694451e67b8b4af6e731a7f8ea0ea899c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "notebooks/figs_examples.ipynb": {
+      "filePath": "notebooks/figs_examples.ipynb",
+      "contentHash": "277a00b6ca19d7fa77c076822f5f29462de9724fec43af79a4b990f48ffa188e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 151,
+      "hasStructuralAnalysis": false
+    },
+    "notebooks/sous_vide_examples.ipynb": {
+      "filePath": "notebooks/sous_vide_examples.ipynb",
+      "contentHash": "759dacccda47563dbc7632b1eef537407918ff011089f1d47f79ac673e91c72e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 264,
+      "hasStructuralAnalysis": false
+    },
+    "pyproject.toml": {
+      "filePath": "pyproject.toml",
+      "contentHash": "b9e3443730d738b950842196a706c2dbe49b7b3c7b48e352be0f6349fe4511c8",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 31,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/network_factory.py": {
+      "filePath": "src/sousvide/control/network_factory.py",
+      "contentHash": "4d4ce9c5a323a022e2a78616afc5005ec313d2119656cce4aa49eeab4fe6690b",
+      "functions": [
+        {
+          "name": "generate_network",
+          "params": [
+            "net_config",
+            "net_name",
+            "pilot_path"
+          ],
+          "returnType": "BaseNet",
+          "exported": true,
+          "lineCount": 49
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "sousvide.control.network_helper",
+          "specifiers": [
+            "nh"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Dict",
+            "Union",
+            "List"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.sifu",
+          "specifiers": [
+            "SIFU"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.svnet",
+          "specifiers": [
+            "SVNet"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.dnnet",
+          "specifiers": [
+            "DNNet"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.feature_extractors",
+          "specifiers": [
+            "DINO"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.pave",
+          "specifiers": [
+            "Pave"
+          ]
+        }
+      ],
+      "exports": [
+        "generate_network"
+      ],
+      "totalLines": 65,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/network_helper.py": {
+      "filePath": "src/sousvide/control/network_helper.py",
+      "contentHash": "d60d4e21f6657882ddffcbc30a599b9dfcc510b7af34db64cc4c14c013e976e8",
+      "functions": [
+        {
+          "name": "get_max_length",
+          "params": [
+            "io_idxs"
+          ],
+          "returnType": "int",
+          "exported": true,
+          "lineCount": 21
+        },
+        {
+          "name": "get_io_refr",
+          "params": [
+            "io_type"
+          ],
+          "returnType": "dict[str, list[list[str|int]]]",
+          "exported": true,
+          "lineCount": 19
+        },
+        {
+          "name": "get_io_dims",
+          "params": [
+            "io_idxs"
+          ],
+          "returnType": "dict[str,list[int]]",
+          "exported": true,
+          "lineCount": 17
+        },
+        {
+          "name": "get_io_sizes",
+          "params": [
+            "io_idxs"
+          ],
+          "returnType": "dict[str,list[int]]",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "get_io_idxs",
+          "params": [
+            "io_cfgs"
+          ],
+          "returnType": "dict[str,list[slice|torch.Tensor]]",
+          "exported": true,
+          "lineCount": 64
+        },
+        {
+          "name": "extract_io",
+          "params": [
+            "io_srcs",
+            "io_idxs"
+          ],
+          "returnType": "dict[str,list[torch.Tensor]]",
+          "exported": true,
+          "lineCount": 34
+        },
+        {
+          "name": "generate_positional_encoding",
+          "params": [
+            "d_model",
+            "max_seq_len"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "math",
+          "specifiers": [
+            "math"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Literal"
+          ]
+        }
+      ],
+      "exports": [
+        "get_max_length",
+        "get_io_refr",
+        "get_io_dims",
+        "get_io_sizes",
+        "get_io_idxs",
+        "extract_io",
+        "generate_positional_encoding"
+      ],
+      "totalLines": 207,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/base_net.py": {
+      "filePath": "src/sousvide/control/networks/base_net.py",
+      "contentHash": "7cdfd614ef55e1a6aa58fbf8586a72044a2a1d295cee464173fcf2a619606d55",
+      "functions": [],
+      "classes": [
+        {
+          "name": "BaseNet",
+          "methods": [
+            "__init__",
+            "get_io_dims",
+            "get_io_sizes",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 108
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch.nn",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "sousvide.control.network_helper",
+          "specifiers": [
+            "nh"
+          ]
+        },
+        {
+          "source": "abc",
+          "specifiers": [
+            "ABC",
+            "abstractmethod"
+          ]
+        }
+      ],
+      "exports": [
+        "BaseNet"
+      ],
+      "totalLines": 114,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/dnnet.py": {
+      "filePath": "src/sousvide/control/networks/dnnet.py",
+      "contentHash": "9e61d4255c87396efd42502ef0aa64a9fa84274e7d75215700930c0f9cbf1b5d",
+      "functions": [],
+      "classes": [
+        {
+          "name": "DNNet",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 77
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "torchvision.models",
+          "specifiers": [
+            "squeezenet1_1"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        }
+      ],
+      "exports": [
+        "DNNet"
+      ],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/feature_extractors.py": {
+      "filePath": "src/sousvide/control/networks/feature_extractors.py",
+      "contentHash": "d818144902438c35b105d357e722a08d8fd94479a2e119c70b5167c1d61eedfa",
+      "functions": [],
+      "classes": [
+        {
+          "name": "VitB16",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 25
+        },
+        {
+          "name": "DINO",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 37
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch.nn",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        },
+        {
+          "source": "torchvision.models",
+          "specifiers": [
+            "vit_b_16",
+            "convnext_tiny",
+            "efficientnet_v2_s",
+            "ViT_B_16_Weights",
+            "ConvNeXt_Tiny_Weights",
+            "EfficientNet_V2_S_Weights"
+          ]
+        },
+        {
+          "source": "transformers",
+          "specifiers": [
+            "AutoModel"
+          ]
+        }
+      ],
+      "exports": [
+        "VitB16",
+        "DINO"
+      ],
+      "totalLines": 72,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/pave.py": {
+      "filePath": "src/sousvide/control/networks/pave.py",
+      "contentHash": "9198f63cd1758c654343d614312a51c901758e5a0c625f1599f99754cf1b93d9",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Pave",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 99
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "torchvision.models",
+          "specifiers": [
+            "squeezenet1_1"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        }
+      ],
+      "exports": [
+        "Pave"
+      ],
+      "totalLines": 107,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/sifu.py": {
+      "filePath": "src/sousvide/control/networks/sifu.py",
+      "contentHash": "c20bd4273acd0951f0612d59fbcf84514a2372d8c46c9d2afcabfb0bc3450aca",
+      "functions": [],
+      "classes": [
+        {
+          "name": "SIFU",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 66
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        }
+      ],
+      "exports": [
+        "SIFU"
+      ],
+      "totalLines": 71,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/networks/svnet.py": {
+      "filePath": "src/sousvide/control/networks/svnet.py",
+      "contentHash": "ff3c6fcc2ea0f05b3f8b4f05ed25906a61fc43467e6e69d7a4c62e10bfc68dd9",
+      "functions": [],
+      "classes": [
+        {
+          "name": "SVNet",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 88
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "torchvision.models",
+          "specifiers": [
+            "squeezenet1_1"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        }
+      ],
+      "exports": [
+        "SVNet"
+      ],
+      "totalLines": 96,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/pilot.py": {
+      "filePath": "src/sousvide/control/pilot.py",
+      "contentHash": "c9a93d33a9a0d7ff3626a6bf56d6faff064106a0c11c2fae2272d2a0ec24661b",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Pilot",
+          "methods": [
+            "__init__",
+            "set_mode",
+            "reset_memory",
+            "observe",
+            "retain",
+            "collate",
+            "act",
+            "ORCA",
+            "control"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 384
+        }
+      ],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "albumentations",
+          "specifiers": [
+            "A"
+          ]
+        },
+        {
+          "source": "figs.utilities.config_helper",
+          "specifiers": [
+            "ch"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Literal"
+          ]
+        },
+        {
+          "source": "figs.control.base_controller",
+          "specifiers": [
+            "BaseController"
+          ]
+        },
+        {
+          "source": "albumentations.pytorch",
+          "specifiers": [
+            "ToTensorV2"
+          ]
+        },
+        {
+          "source": "sousvide.control.policy",
+          "specifiers": [
+            "Policy"
+          ]
+        }
+      ],
+      "exports": [
+        "Pilot"
+      ],
+      "totalLines": 396,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/control/policy.py": {
+      "filePath": "src/sousvide/control/policy.py",
+      "contentHash": "c977eb1e3d4d4016ab59e4a10ae7c7be735e510bc8acbb2ba326c387cfe8bf31",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Policy",
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 83
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "sousvide.control.network_factory",
+          "specifiers": [
+            "nf"
+          ]
+        },
+        {
+          "source": "sousvide.control.network_helper",
+          "specifiers": [
+            "nh"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        }
+      ],
+      "exports": [
+        "Policy"
+      ],
+      "totalLines": 91,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/flight/command_helper.py": {
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "contentHash": "690bfdac5ed4d6fca00ecc11e9b332b703e3a8a7a8643e8e62c8c132714e6097",
+      "functions": [
+        {
+          "name": "get_camera",
+          "params": [
+            "height",
+            "width",
+            "fps"
+          ],
+          "returnType": "rs.pipeline",
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "get_image",
+          "params": [
+            "pipeline"
+          ],
+          "returnType": "Tuple[np.ndarray,np.ndarray]",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "close_camera",
+          "params": [
+            "pipeline"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "vo2x",
+          "params": [
+            "vo",
+            "T_12"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 16
+        },
+        {
+          "name": "x_transform",
+          "params": [
+            "x1",
+            "T_12"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "am2unf",
+          "params": [
+            "am"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "vrs2uvr",
+          "params": [
+            "vr"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "publish_uvr_command",
+          "params": [
+            "timestamp",
+            "uvr",
+            "vrs_publisher"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "engage_offboard_control_mode",
+          "params": [
+            "timestamp",
+            "vc_publisher"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "land",
+          "params": [
+            "timestamp",
+            "vc_publisher"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "heartbeat_offboard_control_mode",
+          "params": [
+            "timestamp",
+            "ocm_publisher"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "typing",
+          "specifiers": [
+            "Tuple"
+          ]
+        },
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "scipy.spatial.transform",
+          "specifiers": [
+            "R"
+          ]
+        },
+        {
+          "source": "pyrealsense2",
+          "specifiers": [
+            "rs"
+          ]
+        },
+        {
+          "source": "rclpy.publisher",
+          "specifiers": [
+            "Publisher"
+          ]
+        },
+        {
+          "source": "px4_msgs.msg",
+          "specifiers": [
+            "VehicleCommand",
+            "OffboardControlMode",
+            "VehicleOdometry",
+            "VehicleRatesSetpoint",
+            "ActuatorMotors"
+          ]
+        }
+      ],
+      "exports": [
+        "get_camera",
+        "get_image",
+        "close_camera",
+        "vo2x",
+        "x_transform",
+        "am2unf",
+        "vrs2uvr",
+        "publish_uvr_command",
+        "engage_offboard_control_mode",
+        "land",
+        "heartbeat_offboard_control_mode"
+      ],
+      "totalLines": 164,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/flight/deploy_figs.py": {
+      "filePath": "src/sousvide/flight/deploy_figs.py",
+      "contentHash": "b74aa6323eb77c431a1ad0b1d7e77b1e25bc385b984626d092c208c21d31dee7",
+      "functions": [
+        {
+          "name": "deploy_roster",
+          "params": [
+            "cohort_name",
+            "course_name",
+            "gsplat_name",
+            "method_name",
+            "roster",
+            "expert_name",
+            "expert_cname",
+            "bframe_name",
+            "mode",
+            "show_table"
+          ],
+          "returnType": "Union[None,dict]",
+          "exported": true,
+          "lineCount": 151
+        },
+        {
+          "name": "save_deployments",
+          "params": [
+            "cohort_name",
+            "course_name",
+            "pilot_name",
+            "deployment_data",
+            "is_generate"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 45
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "figs.utilities.config_helper",
+          "specifiers": [
+            "ch"
+          ]
+        },
+        {
+          "source": "figs.utilities.transform_helper",
+          "specifiers": [
+            "th"
+          ]
+        },
+        {
+          "source": "figs.visualize.generate_videos",
+          "specifiers": [
+            "gv"
+          ]
+        },
+        {
+          "source": "sousvide.synthesize.synthesize_helper",
+          "specifiers": [
+            "sh"
+          ]
+        },
+        {
+          "source": "sousvide.utilities.sousvide_utilities",
+          "specifiers": [
+            "svu"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.record_flight",
+          "specifiers": [
+            "rf"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "sousvide.flight.flight_helper",
+          "specifiers": [
+            "fh"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "List",
+            "Literal",
+            "Union"
+          ]
+        },
+        {
+          "source": "figs.tsplines.min_time_snap",
+          "specifiers": [
+            "MinTimeSnap"
+          ]
+        },
+        {
+          "source": "figs.simulator",
+          "specifiers": [
+            "Simulator"
+          ]
+        },
+        {
+          "source": "figs.control.vehicle_rate_mpc",
+          "specifiers": [
+            "VehicleRateMPC"
+          ]
+        },
+        {
+          "source": "figs.dynamics.external_forces",
+          "specifiers": [
+            "ExternalForces"
+          ]
+        },
+        {
+          "source": "sousvide.control.pilot",
+          "specifiers": [
+            "Pilot"
+          ]
+        }
+      ],
+      "exports": [
+        "deploy_roster",
+        "save_deployments"
+      ],
+      "totalLines": 216,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/flight/flight_helper.py": {
+      "filePath": "src/sousvide/flight/flight_helper.py",
+      "contentHash": "a2c9a0ff8ea1e62d2d72979d64ad00182c18219645c2fd70512cd8e24b31c884",
+      "functions": [
+        {
+          "name": "compute_flight_metrics",
+          "params": [
+            "Trajectories",
+            "pp_threshold"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 50
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "compute_flight_metrics"
+      ],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/instruct/losses.py": {
+      "filePath": "src/sousvide/instruct/losses.py",
+      "contentHash": "d197d2e3018609cac85e32987dddec947a9c53fe0f6402c28a2c0f8ef3b256a5",
+      "functions": [
+        {
+          "name": "loss_entropy",
+          "params": [
+            "weights"
+          ],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "loss_load_balance",
+          "params": [
+            "weights"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "LossFn",
+          "methods": [
+            "__init__",
+            "__call__"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "imports": [
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch.nn.functional",
+          "specifiers": [
+            "F"
+          ]
+        }
+      ],
+      "exports": [
+        "loss_entropy",
+        "loss_load_balance",
+        "LossFn"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/instruct/synthesized_data.py": {
+      "filePath": "src/sousvide/instruct/synthesized_data.py",
+      "contentHash": "56f89d9a8a61e09260f3abc36012f226d26334bc91750ae8fd69026dab8f8cc8",
+      "functions": [
+        {
+          "name": "squeeze_data",
+          "params": [
+            "data"
+          ],
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "generate_dataset",
+          "params": [
+            "data_path",
+            "device"
+          ],
+          "returnType": "Dataset",
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "get_data_paths",
+          "params": [
+            "cohort_name",
+            "student_name",
+            "topic_name",
+            "course_name"
+          ],
+          "returnType": "tuple[list[str],str]",
+          "exported": true,
+          "lineCount": 55
+        }
+      ],
+      "classes": [
+        {
+          "name": "ObservationData",
+          "methods": [
+            "__init__",
+            "__len__",
+            "__getitem__"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "imports": [
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch.utils.data",
+          "specifiers": [
+            "Dataset"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Any"
+          ]
+        }
+      ],
+      "exports": [
+        "ObservationData",
+        "squeeze_data",
+        "generate_dataset",
+        "get_data_paths"
+      ],
+      "totalLines": 122,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/instruct/train_policy.py": {
+      "filePath": "src/sousvide/instruct/train_policy.py",
+      "contentHash": "f5ca9fca8e8a72f2f8f54fa51091f9cb4c388dd50fabbb36dbdd02f73f68bd87",
+      "functions": [
+        {
+          "name": "train_roster",
+          "params": [
+            "cohort_name",
+            "roster",
+            "network_name",
+            "Neps",
+            "regen",
+            "deployment",
+            "lim_sv",
+            "lr",
+            "batch_size"
+          ],
+          "exported": true,
+          "lineCount": 28
+        },
+        {
+          "name": "train_student",
+          "params": [
+            "cohort_name",
+            "student_name",
+            "network_name",
+            "Neps",
+            "deployment",
+            "lim_sv",
+            "lr",
+            "batch_size",
+            "progress_bar"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 197
+        },
+        {
+          "name": "get_network",
+          "params": [
+            "policy",
+            "net_name"
+          ],
+          "returnType": "BaseNet",
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "shutil",
+          "specifiers": [
+            "shutil"
+          ]
+        },
+        {
+          "source": "contextlib",
+          "specifiers": [
+            "contextlib"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "torch.nn",
+          "specifiers": [
+            "nn"
+          ]
+        },
+        {
+          "source": "torch.optim",
+          "specifiers": [
+            "optim"
+          ]
+        },
+        {
+          "source": "sousvide.synthesize.observation_generator",
+          "specifiers": [
+            "og"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "torch.utils.data",
+          "specifiers": [
+            "DataLoader"
+          ]
+        },
+        {
+          "source": "rich.progress",
+          "specifiers": [
+            "Progress"
+          ]
+        },
+        {
+          "source": "sousvide.control.pilot",
+          "specifiers": [
+            "Pilot"
+          ]
+        },
+        {
+          "source": "sousvide.control.policy",
+          "specifiers": [
+            "Policy"
+          ]
+        },
+        {
+          "source": "sousvide.control.networks.base_net",
+          "specifiers": [
+            "BaseNet"
+          ]
+        },
+        {
+          "source": "sousvide.instruct.losses",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "sousvide.instruct.synthesized_data",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "sousvide.flight.deploy_figs",
+          "specifiers": [
+            "df"
+          ]
+        }
+      ],
+      "exports": [
+        "train_roster",
+        "train_student",
+        "get_network"
+      ],
+      "totalLines": 270,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/synthesize/data_compress_helper.py": {
+      "filePath": "src/sousvide/synthesize/data_compress_helper.py",
+      "contentHash": "724ccd818a0955bef69c0caf3351921c11901a246f66cf78caa7d3a0ae21553e",
+      "functions": [
+        {
+          "name": "decompress_data",
+          "params": [
+            "image_dict"
+          ],
+          "returnType": "dict[str,str|np.ndarray]",
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "compress_data",
+          "params": [
+            "Images"
+          ],
+          "exported": true,
+          "lineCount": 38
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "PIL",
+          "specifiers": [
+            "Image"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "BytesIO"
+          ]
+        }
+      ],
+      "exports": [
+        "decompress_data",
+        "compress_data"
+      ],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/synthesize/observation_generator.py": {
+      "filePath": "src/sousvide/synthesize/observation_generator.py",
+      "contentHash": "a5d783917f18c42e0a5b1d818f252f1a3dcfd30a1ec95d1791d347ee8bf3dfd5",
+      "functions": [
+        {
+          "name": "generate_observation_data",
+          "params": [
+            "cohort",
+            "roster",
+            "networks",
+            "subsample"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 103
+        },
+        {
+          "name": "generate_observations",
+          "params": [
+            "pilot",
+            "traj_set",
+            "imgs_set",
+            "subsample",
+            "progress_bar"
+          ],
+          "returnType": "tuple[dict[str,str|int|dict[str,np.ndarray|float,str]],int]",
+          "exported": true,
+          "lineCount": 107
+        },
+        {
+          "name": "save_observations",
+          "params": [
+            "cohort_name",
+            "course_name",
+            "pilot_name",
+            "Observations",
+            "idx_set",
+            "networks"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 51
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "sousvide.synthesize.data_compress_helper",
+          "specifiers": [
+            "dch"
+          ]
+        },
+        {
+          "source": "sousvide.control.network_helper",
+          "specifiers": [
+            "nh"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "rich.progress",
+          "specifiers": [
+            "Progress"
+          ]
+        },
+        {
+          "source": "sousvide.control.pilot",
+          "specifiers": [
+            "Pilot"
+          ]
+        }
+      ],
+      "exports": [
+        "generate_observation_data",
+        "generate_observations",
+        "save_observations"
+      ],
+      "totalLines": 274,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/synthesize/rollout_generator.py": {
+      "filePath": "src/sousvide/synthesize/rollout_generator.py",
+      "contentHash": "3e6f46ae76f5f66f0ad6723f9d206352f80c6cd4c990645b8b2399a06adb7e42",
+      "functions": [
+        {
+          "name": "generate_rollout_data",
+          "params": [
+            "cohort_name",
+            "course_names",
+            "gsplat_name",
+            "method_name",
+            "expert_name",
+            "bframe_name",
+            "Nro_ds",
+            "use_compress"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 126
+        },
+        {
+          "name": "generate_rollouts",
+          "params": [
+            "simulator",
+            "controller",
+            "tXUd",
+            "bframe",
+            "Frames",
+            "Perturbations",
+            "dt_ro",
+            "tol_select",
+            "idx_set",
+            "progress_bar",
+            "debug"
+          ],
+          "returnType": "tuple[list[dict[str,np.ndarray]],list[torch.Tensor]]",
+          "exported": true,
+          "lineCount": 99
+        },
+        {
+          "name": "save_rollouts",
+          "params": [
+            "cohort_name",
+            "course_name",
+            "Trajectories",
+            "Images",
+            "stack_id",
+            "use_compress"
+          ],
+          "returnType": "None",
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "figs.utilities.config_helper",
+          "specifiers": [
+            "ch"
+          ]
+        },
+        {
+          "source": "figs.utilities.transform_helper",
+          "specifiers": [
+            "th"
+          ]
+        },
+        {
+          "source": "sousvide.synthesize.synthesize_helper",
+          "specifiers": [
+            "sh"
+          ]
+        },
+        {
+          "source": "sousvide.synthesize.data_compress_helper",
+          "specifiers": [
+            "dch"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "sousvide.utilities.sousvide_utilities",
+          "specifiers": [
+            "svu"
+          ]
+        },
+        {
+          "source": "figs.simulator",
+          "specifiers": [
+            "Simulator"
+          ]
+        },
+        {
+          "source": "figs.dynamics.external_forces",
+          "specifiers": [
+            "ExternalForces"
+          ]
+        },
+        {
+          "source": "figs.tsplines.min_time_snap",
+          "specifiers": [
+            "MinTimeSnap"
+          ]
+        },
+        {
+          "source": "figs.control.vehicle_rate_mpc",
+          "specifiers": [
+            "VehicleRateMPC"
+          ]
+        }
+      ],
+      "exports": [
+        "generate_rollout_data",
+        "generate_rollouts",
+        "save_rollouts"
+      ],
+      "totalLines": 293,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/synthesize/synthesize_helper.py": {
+      "filePath": "src/sousvide/synthesize/synthesize_helper.py",
+      "contentHash": "1535bf2cea88ecb3f86736b59ba05355fa1394f81d9a63b03b655f6ed90802f5",
+      "functions": [
+        {
+          "name": "generate_frames",
+          "params": [
+            "Tsps",
+            "base_frame_config",
+            "parameters_bounds",
+            "rng_seed"
+          ],
+          "returnType": "list[dict[str,np.ndarray|str|int,float]]",
+          "exported": true,
+          "lineCount": 45
+        },
+        {
+          "name": "generate_perturbations",
+          "params": [
+            "Tsps",
+            "tXUd",
+            "initial_bounds",
+            "rng_seed"
+          ],
+          "returnType": "list[dict[str,float|np.ndarray]]",
+          "exported": true,
+          "lineCount": 52
+        },
+        {
+          "name": "compute_Tsp_batches",
+          "params": [
+            "t0",
+            "tf",
+            "dt_ro",
+            "rate",
+            "reps",
+            "Nro_ds",
+            "shuffle"
+          ],
+          "returnType": "list[np.ndarray]",
+          "exported": true,
+          "lineCount": 45
+        },
+        {
+          "name": "get_patch_index",
+          "params": [
+            "u",
+            "v",
+            "patch_height",
+            "patch_width",
+            "n_rows",
+            "n_cols"
+          ],
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "get_patch_bounds",
+          "params": [
+            "u",
+            "v",
+            "H",
+            "W",
+            "n_rows",
+            "n_cols"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "scipy.spatial.transform",
+          "specifiers": [
+            "R"
+          ]
+        },
+        {
+          "source": "copy",
+          "specifiers": [
+            "copy"
+          ]
+        },
+        {
+          "source": "figs.utilities.orientation_helper",
+          "specifiers": [
+            "oh"
+          ]
+        },
+        {
+          "source": "figs.dynamics.quadcopter_specifications",
+          "specifiers": [
+            "qs"
+          ]
+        }
+      ],
+      "exports": [
+        "generate_frames",
+        "generate_perturbations",
+        "compute_Tsp_batches",
+        "get_patch_index",
+        "get_patch_bounds"
+      ],
+      "totalLines": 185,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/utilities/sousvide_utilities.py": {
+      "filePath": "src/sousvide/utilities/sousvide_utilities.py",
+      "contentHash": "58831499319511b6fe019dab12f21177782a283526860cc8bbe932902457e6bf",
+      "functions": [
+        {
+          "name": "compute_prms",
+          "params": [
+            "frame"
+          ],
+          "returnType": "list",
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "compute_Wrs",
+          "params": [
+            "Xro",
+            "Uro",
+            "Wro",
+            "frame",
+            "bframe"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 46
+        },
+        {
+          "name": "compute_FOro",
+          "params": [
+            "Tro",
+            "Xro",
+            "Uro",
+            "Wro",
+            "frame"
+          ],
+          "returnType": "np.ndarray",
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "figs.utilities.transform_helper",
+          "specifiers": [
+            "th"
+          ]
+        },
+        {
+          "source": "scipy.spatial.transform",
+          "specifiers": [
+            "R"
+          ]
+        }
+      ],
+      "exports": [
+        "compute_prms",
+        "compute_Wrs",
+        "compute_FOro"
+      ],
+      "totalLines": 104,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/plot_3D.py": {
+      "filePath": "src/sousvide/visualize/plot_3D.py",
+      "contentHash": "1f0c7b7ed2a937de36919a83ce96c7b172bddcbd6bd7ef2e642524f2f6303d3b",
+      "functions": [
+        {
+          "name": "tXU_to_3D",
+          "params": [
+            "tXU_list",
+            "WPs",
+            "tXUd",
+            "scale",
+            "n",
+            "plot_last"
+          ],
+          "exported": true,
+          "lineCount": 52
+        },
+        {
+          "name": "RO_to_3D",
+          "params": [
+            "RO",
+            "n",
+            "scale",
+            "plot_last"
+          ],
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "matplotlib.pyplot",
+          "specifiers": [
+            "plt"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.plot_utilities",
+          "specifiers": [
+            "pu"
+          ]
+        }
+      ],
+      "exports": [
+        "tXU_to_3D",
+        "RO_to_3D"
+      ],
+      "totalLines": 84,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/plot_learning.py": {
+      "filePath": "src/sousvide/visualize/plot_learning.py",
+      "contentHash": "d7036bd15bcb445d3dbc971aae2a768d31e80794eba9c7da5b5527536132aba6",
+      "functions": [
+        {
+          "name": "plot_losses",
+          "params": [
+            "cohort_name",
+            "roster",
+            "network_name",
+            "Nln",
+            "use_log"
+          ],
+          "exported": true,
+          "lineCount": 134
+        },
+        {
+          "name": "plot_deployments",
+          "params": [
+            "cohort_name",
+            "course_name",
+            "roster",
+            "plot_show"
+          ],
+          "exported": true,
+          "lineCount": 37
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "matplotlib.pyplot",
+          "specifiers": [
+            "plt"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.plot_3D",
+          "specifiers": [
+            "p3"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "sousvide.flight.flight_helper",
+          "specifiers": [
+            "fh"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "plot_losses",
+        "plot_deployments"
+      ],
+      "totalLines": 183,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/plot_synthesize.py": {
+      "filePath": "src/sousvide/visualize/plot_synthesize.py",
+      "contentHash": "1c5127d024184af0923c8e0d9237e1c9384ae08fbbee407da57594a89ad1953a",
+      "functions": [
+        {
+          "name": "plot_rollout_data",
+          "params": [
+            "cohort",
+            "Nsamples",
+            "show_3D",
+            "show_time"
+          ],
+          "exported": true,
+          "lineCount": 68
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.plot_3D",
+          "specifiers": [
+            "p3"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.plot_time",
+          "specifiers": [
+            "pt"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.rich_utilities",
+          "specifiers": [
+            "ru"
+          ]
+        },
+        {
+          "source": "rich.text",
+          "specifiers": [
+            "Text"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "plot_rollout_data"
+      ],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/plot_time.py": {
+      "filePath": "src/sousvide/visualize/plot_time.py",
+      "contentHash": "b6036a4dd83c1572d67563b341a6efc1ea0538e4e6a27ed62241008beecc81c2",
+      "functions": [
+        {
+          "name": "tXU_to_time",
+          "params": [
+            "tXU_list",
+            "tXd"
+          ],
+          "exported": true,
+          "lineCount": 58
+        },
+        {
+          "name": "RO_to_time",
+          "params": [
+            "RO"
+          ],
+          "exported": true,
+          "lineCount": 24
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "matplotlib.pyplot",
+          "specifiers": [
+            "plt"
+          ]
+        },
+        {
+          "source": "sousvide.visualize.plot_utilities",
+          "specifiers": [
+            "pu"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Dict",
+            "Union",
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "tXU_to_time",
+        "RO_to_time"
+      ],
+      "totalLines": 90,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/plot_utilities.py": {
+      "filePath": "src/sousvide/visualize/plot_utilities.py",
+      "contentHash": "250080702b77ab27ff8cd27d182fc0b118b658b23d4ff71e7a57c3f6275435f8",
+      "functions": [
+        {
+          "name": "get_plot_limits",
+          "params": [
+            "XX",
+            "lim_min",
+            "lim_max",
+            "abs_max"
+          ],
+          "returnType": "Tuple[np.ndarray,np.ndarray]",
+          "exported": true,
+          "lineCount": 29
+        },
+        {
+          "name": "quad_frame",
+          "params": [
+            "x",
+            "ax",
+            "scale"
+          ],
+          "exported": true,
+          "lineCount": 22
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "matplotlib.pyplot",
+          "specifiers": [
+            "plt"
+          ]
+        },
+        {
+          "source": "scipy.spatial.transform",
+          "specifiers": [
+            "R"
+          ]
+        },
+        {
+          "source": "figs.utilities.transform_helper",
+          "specifiers": [
+            "th"
+          ]
+        },
+        {
+          "source": "figs.utilities.orientation_helper",
+          "specifiers": [
+            "oh"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Tuple",
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "get_plot_limits",
+        "quad_frame"
+      ],
+      "totalLines": 61,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/record_flight.py": {
+      "filePath": "src/sousvide/visualize/record_flight.py",
+      "contentHash": "72c6111b84479dfe61d8867cd2391cb598d5ab0a46d6de95d6c0d968849047fa",
+      "functions": [],
+      "classes": [
+        {
+          "name": "FlightRecorder",
+          "methods": [
+            "__init__",
+            "record",
+            "simulation_import",
+            "save",
+            "process_images"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 242
+        }
+      ],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "datetime",
+          "specifiers": [
+            "datetime"
+          ]
+        },
+        {
+          "source": "torch",
+          "specifiers": [
+            "torch"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "List",
+            "Literal"
+          ]
+        },
+        {
+          "source": "albumentations",
+          "specifiers": [
+            "A"
+          ]
+        },
+        {
+          "source": "albumentations.pytorch",
+          "specifiers": [
+            "ToTensorV2"
+          ]
+        },
+        {
+          "source": "imageio",
+          "specifiers": [
+            "imageio"
+          ]
+        }
+      ],
+      "exports": [
+        "FlightRecorder"
+      ],
+      "totalLines": 251,
+      "hasStructuralAnalysis": true
+    },
+    "src/sousvide/visualize/rich_utilities.py": {
+      "filePath": "src/sousvide/visualize/rich_utilities.py",
+      "contentHash": "64f964caf9b5aee62c37240fc0139fae0a4a8d3e680611e056e4465ecdac1b22",
+      "functions": [
+        {
+          "name": "get_generation_progress",
+          "params": [],
+          "returnType": "Progress",
+          "exported": true,
+          "lineCount": 17
+        },
+        {
+          "name": "get_training_progress",
+          "params": [],
+          "returnType": "Progress",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "get_data_description",
+          "params": [
+            "name",
+            "value",
+            "subunits",
+            "Nmn",
+            "Nct"
+          ],
+          "returnType": "str",
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "get_deployment_table",
+          "params": [],
+          "returnType": "str",
+          "exported": true,
+          "lineCount": 20
+        },
+        {
+          "name": "update_deployment_table",
+          "params": [
+            "table",
+            "pilot",
+            "metrics"
+          ],
+          "exported": true,
+          "lineCount": 24
+        },
+        {
+          "name": "get_student_summary",
+          "params": [
+            "student",
+            "Neps_tot",
+            "Nd_mean",
+            "T_tn_tot",
+            "loss_tn",
+            "loss_tt",
+            "eval_tte",
+            "Nln"
+          ],
+          "returnType": "str",
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "numpy",
+          "specifiers": [
+            "np"
+          ]
+        },
+        {
+          "source": "rich",
+          "specifiers": [
+            "get_console"
+          ]
+        },
+        {
+          "source": "rich.progress",
+          "specifiers": [
+            "Progress",
+            "SpinnerColumn",
+            "BarColumn",
+            "TextColumn",
+            "TimeRemainingColumn"
+          ]
+        },
+        {
+          "source": "rich.table",
+          "specifiers": [
+            "Table"
+          ]
+        },
+        {
+          "source": "typing",
+          "specifiers": [
+            "Tuple",
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "get_generation_progress",
+        "get_training_progress",
+        "get_data_description",
+        "get_deployment_table",
+        "update_deployment_table",
+        "get_student_summary"
+      ],
+      "totalLines": 151,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

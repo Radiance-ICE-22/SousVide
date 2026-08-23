@@ -1,0 +1,108 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "SousVide (Scene Understanding via Synthesized Visual Inertial Data from Experts) is a Stanford MSL research project for training and deploying learned drone flight-control policies. The README explains the pipeline at a high level: an expert controller flies trajectories inside a Gaussian-splat simulator (FiGS) to synthesize training data, a policy network is trained on that data, and the trained policy can then be deployed back into simulation or onto a real drone. It also covers setup: cloning the FiGS submodule, building the ACADOS MPC solver, and creating the 'kitchen' conda environment.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Usage Walkthrough Notebook",
+    "description": "Since this is a research library rather than an application with a single entry point, the sous_vide_examples notebook is the practical starting point for understanding how the pieces connect. It walks through generating rollout and observation data, training the histNet/commNet policy networks, and evaluating the trained policy in FiGS simulation end to end. Keep this notebook in mind as a map -- every module explored in the rest of this tour plugs into one of its steps.",
+    "nodeIds": ["file:notebooks/sous_vide_examples.ipynb"]
+  },
+  {
+    "order": 3,
+    "title": "Pilot and Network I/O Configuration",
+    "description": "Nearly everything in SousVide is parameterized by JSON configs rather than hardcoded. A pilot config like Iceman.json declares a full two-stage network architecture (a SIFU history-encoder feeding an SVNet command network) purely as data, while the nnio schemas (basic.json, sequence.json) define the named tensor channels -- state, image, command, feature vectors -- that every network architecture reads and writes. Understanding this config vocabulary first makes the code in later steps much easier to follow, since the code is largely generic dispatch logic driven by these declarations.",
+    "nodeIds": ["config:configs/pilots/Iceman.json", "config:configs/nnio/basic.json", "config:configs/nnio/sequence.json"]
+  },
+  {
+    "order": 4,
+    "title": "Vehicle Frame and Flight Courses",
+    "description": "Two more config families complete the parameterization picture: frame configs like carl.json define a physical drone's mass, inertia, rotor geometry, and camera intrinsics/extrinsics, while course configs like circuit.json define timed keyframe trajectories (position, yaw, and derivatives) that an expert controller will fly. Together with the pilot and nnio configs from Step 3, these fully specify what vehicle flies, what path it flies, and what network processes its data -- all without touching Python code.",
+    "nodeIds": ["config:configs/frames/carl.json", "config:configs/courses/circuit.json"]
+  },
+  {
+    "order": 5,
+    "title": "Generating Synthetic Flight Data",
+    "description": "With configs in hand, the synthesize layer is where the pipeline actually begins: rollout_generator.py simulates an expert VehicleRateMPC controller flying perturbed frames and trajectories through the FiGS Gaussian-splat scene, producing raw flight trajectories and camera images. synthesize_helper.py supplies the pure helper functions behind this -- randomized frame sampling, initial-state perturbation, and trajectory batching -- while data_compress_helper.py compresses the resulting image stacks to JPEG bytes so datasets stay manageable on disk. This is the 'expert demonstration' half of the learning-from-demonstration approach the paper's name describes.",
+    "nodeIds": [
+      "file:src/sousvide/synthesize/rollout_generator.py",
+      "file:src/sousvide/synthesize/synthesize_helper.py",
+      "file:src/sousvide/synthesize/data_compress_helper.py"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Neural Network Foundation",
+    "description": "Before looking at any specific architecture, it helps to see the shared scaffolding all of them build on. base_net.py defines BaseNet, an abstract PyTorch nn.Module that every SousVide network subclasses to normalize its input/output configuration (the nnio schemas from Step 3) into index maps. network_helper.py provides the shared tensor-shape and positional-encoding utilities every architecture needs, and network_factory.py is the dispatcher: given a config dict, it instantiates the right network class by name and caches the result to disk. This trio has the highest fan-in in the codebase, meaning almost every other control-layer file depends on it.",
+    "nodeIds": [
+      "file:src/sousvide/control/networks/base_net.py",
+      "file:src/sousvide/control/network_helper.py",
+      "file:src/sousvide/control/network_factory.py"
+    ],
+    "languageLesson": "PyTorch models are typically built as nn.Module subclasses. BaseNet demonstrates the abstract-base-class pattern: it implements shared behavior (config normalization, dimension helpers) once, and concrete subclasses only need to implement their own forward() logic."
+  },
+  {
+    "order": 7,
+    "title": "Specialized Network Architectures",
+    "description": "Building on BaseNet, the individual architecture files each implement one strategy for turning sensor observations into flight commands: SVNet fuses a SqueezeNet image backbone with MLP branches over state and history; SIFU maps history sequences to estimated physical parameters (or a feature vector at deployment); Pave adds actor/critic heads for stochastic control; feature_extractors.py wraps a pretrained DINOv2 vision transformer; and DNNet fuses image, heatmap, and history features through a simpler MLP head. The pilot configs from Step 3 (Iceman, Rooster, Maverick) each mix and match these building blocks by name via network_factory.",
+    "nodeIds": [
+      "file:src/sousvide/control/networks/svnet.py",
+      "file:src/sousvide/control/networks/sifu.py",
+      "file:src/sousvide/control/networks/pave.py",
+      "file:src/sousvide/control/networks/feature_extractors.py",
+      "file:src/sousvide/control/networks/dnnet.py"
+    ]
+  },
+  {
+    "order": 8,
+    "title": "Assembling and Running the Policy",
+    "description": "Policy and Pilot sit on top of the individual network architectures. policy.py's Policy class chains multiple sub-networks built by network_factory (for example a featNet feeding a commNet) into one forward pass. pilot.py's Pilot class wraps a Policy inside an OODA-style control loop (Observe-Retain-Collate-Act), maintaining rolling history buffers and feeding live state, image, and force/torque observations through the network to produce control commands. This is the runtime object that both the data-synthesis pipeline and the real/simulated flight code drive.",
+    "nodeIds": ["file:src/sousvide/control/policy.py", "file:src/sousvide/control/pilot.py"]
+  },
+  {
+    "order": 9,
+    "title": "From Raw Rollouts to Training Tensors",
+    "description": "observation_generator.py closes the loop between synthesis and training: it replays the raw rollout and image data from Step 5 through a Pilot's ORCA control loop (Step 8) with randomized noise injection, then compresses and saves the resulting input/output tensors per network. This is the step that turns 'expert flew this trajectory' into 'here are labeled (input, output) pairs a network can learn from' -- the highest fan-out file in the synthesize layer.",
+    "nodeIds": ["file:src/sousvide/synthesize/observation_generator.py"]
+  },
+  {
+    "order": 10,
+    "title": "Training the Policy Network",
+    "description": "The instruct layer consumes the observation tensors from Step 9. synthesized_data.py's ObservationData Dataset wraps them for PyTorch's DataLoader; losses.py defines the LossFn class (summed MSE across prediction/label keys) plus mixture-of-experts regularizers; and train_policy.py -- the file with the highest fan-out in the whole codebase -- orchestrates the full training loop: regenerating data if needed, per-student training with checkpointing, periodic in-training evaluation via deploy_figs, and best-checkpoint selection.",
+    "nodeIds": [
+      "file:src/sousvide/instruct/train_policy.py",
+      "file:src/sousvide/instruct/synthesized_data.py",
+      "file:src/sousvide/instruct/losses.py"
+    ]
+  },
+  {
+    "order": 11,
+    "title": "Deploying to Simulation and Real Drones",
+    "description": "The flight layer is where a trained Pilot (Step 8) actually flies. deploy_figs.py orchestrates roster-level closed-loop deployment in the FiGS simulator across configuration/course/pilot combinations, computing metrics and saving videos -- it's also what train_policy.py calls for in-training evaluation. flight_helper.py computes tracking-error and inference-time metrics from the resulting rollouts, while command_helper.py is the real-hardware counterpart, handling RealSense camera capture and MAVSDK/PX4 offboard control messages for flying an actual drone -- the 'coming soon' real-world deployment path mentioned in the README.",
+    "nodeIds": [
+      "file:src/sousvide/flight/deploy_figs.py",
+      "file:src/sousvide/flight/flight_helper.py",
+      "file:src/sousvide/flight/command_helper.py"
+    ]
+  },
+  {
+    "order": 12,
+    "title": "Shared Utilities and Visualization",
+    "description": "Cutting across every layer above is a set of shared support tools. rich_utilities.py -- the second-highest fan-in file in the project -- provides the console progress bars and result tables used during both data generation (Step 5) and training (Step 10). plot_learning.py visualizes training loss curves and deployment results, and record_flight.py's FlightRecorder captures state, input, and camera images at each simulation timestep and renders them to video, which is what deploy_figs.py relies on to produce its output videos.",
+    "nodeIds": [
+      "file:src/sousvide/visualize/rich_utilities.py",
+      "file:src/sousvide/visualize/plot_learning.py",
+      "file:src/sousvide/visualize/record_flight.py"
+    ]
+  },
+  {
+    "order": 13,
+    "title": "Public Website and Build Environment",
+    "description": "Two supporting concerns round out the project. docs/index.html is the public GitHub Pages landing page for the SOUS VIDE paper, presenting the abstract, figures, and deployment videos referenced above. environment_x86.yml, pyproject.toml, and .gitmodules define how to actually build the project: the conda environment pins Python 3.10 and PyTorch with CUDA 11.8, pyproject.toml packages the 'sousvide' module under src/, and .gitmodules wires in the FiGS simulator submodule that every step in this tour ultimately depends on.",
+    "nodeIds": ["file:docs/index.html", "config:environment_x86.yml", "config:pyproject.toml", "file:.gitmodules"],
+    "languageLesson": "pyproject.toml is the modern, PEP 517/518-standard way to declare a Python package's build backend and dependencies in one file, replacing the older setup.py. Combined with an environment.yml for conda-managed native/GPU dependencies (like CUDA-linked PyTorch), this is a common pattern for research code that mixes pure-Python packaging with heavy compiled dependencies."
+  }
+]

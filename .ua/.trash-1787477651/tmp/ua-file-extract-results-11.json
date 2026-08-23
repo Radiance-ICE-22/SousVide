@@ -1,0 +1,1399 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [
+    ".gitmodules",
+    ".ua/.understandignore",
+    "docs/index.html",
+    "docs/static/css/bulma.css.map.txt",
+    "docs/static/css/index.css",
+    "notebooks/figs_examples.ipynb",
+    "notebooks/sous_vide_examples.ipynb"
+  ],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "configs/frames/carl.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 26,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "mass",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "massless_inertia",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "arm_front",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "arm_back",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "motor_thrust_coeff",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "motor_torque_coeff",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "number_of_rotors",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "camera_to_body_transform",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "camera",
+          "level": 1,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "docs/static/js/bulma-carousel.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 2371,
+      "nonEmptyLines": 2006,
+      "callGraph": [
+        {
+          "caller": "__webpack_require__",
+          "callee": "modules[moduleId].call",
+          "lineNumber": 30
+        },
+        {
+          "caller": "addClasses",
+          "callee": "Array.isArray",
+          "lineNumber": 96
+        },
+        {
+          "caller": "addClasses",
+          "callee": "classes.split",
+          "lineNumber": 96
+        },
+        {
+          "caller": "addClasses",
+          "callee": "classes.forEach",
+          "lineNumber": 97
+        },
+        {
+          "caller": "addClasses",
+          "callee": "element.classList.add",
+          "lineNumber": 98
+        },
+        {
+          "caller": "removeClasses",
+          "callee": "Array.isArray",
+          "lineNumber": 103
+        },
+        {
+          "caller": "removeClasses",
+          "callee": "classes.split",
+          "lineNumber": 103
+        },
+        {
+          "caller": "removeClasses",
+          "callee": "classes.forEach",
+          "lineNumber": 104
+        },
+        {
+          "caller": "removeClasses",
+          "callee": "element.classList.remove",
+          "lineNumber": 105
+        },
+        {
+          "caller": "show",
+          "callee": "Array.isArray",
+          "lineNumber": 110
+        },
+        {
+          "caller": "show",
+          "callee": "elements.forEach",
+          "lineNumber": 111
+        },
+        {
+          "caller": "hide",
+          "callee": "Array.isArray",
+          "lineNumber": 117
+        },
+        {
+          "caller": "hide",
+          "callee": "elements.forEach",
+          "lineNumber": 118
+        },
+        {
+          "caller": "offset",
+          "callee": "element.getBoundingClientRect",
+          "lineNumber": 124
+        },
+        {
+          "caller": "width",
+          "callee": "element.getBoundingClientRect",
+          "lineNumber": 133
+        },
+        {
+          "caller": "height",
+          "callee": "element.getBoundingClientRect",
+          "lineNumber": 137
+        },
+        {
+          "caller": "outerHeight",
+          "callee": "window.getComputedStyle",
+          "lineNumber": 145
+        },
+        {
+          "caller": "outerHeight",
+          "callee": "parseInt",
+          "lineNumber": 146
+        },
+        {
+          "caller": "outerHeight",
+          "callee": "parseInt",
+          "lineNumber": 146
+        },
+        {
+          "caller": "outerWidth",
+          "callee": "window.getComputedStyle",
+          "lineNumber": 156
+        },
+        {
+          "caller": "outerWidth",
+          "callee": "parseInt",
+          "lineNumber": 157
+        },
+        {
+          "caller": "outerWidth",
+          "callee": "parseInt",
+          "lineNumber": 157
+        },
+        {
+          "caller": "css",
+          "callee": "window.getComputedStyle",
+          "lineNumber": 171
+        },
+        {
+          "caller": "css",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_0__type__[\"b\" /* isObject */])",
+          "lineNumber": 173
+        },
+        {
+          "caller": "css",
+          "callee": "Object",
+          "lineNumber": 173
+        },
+        {
+          "caller": "css",
+          "callee": "Object.keys(obj).forEach",
+          "lineNumber": 175
+        },
+        {
+          "caller": "css",
+          "callee": "Object.keys",
+          "lineNumber": 175
+        },
+        {
+          "caller": "detectSupportsPassive",
+          "callee": "Object.defineProperty",
+          "lineNumber": 193
+        },
+        {
+          "caller": "detectSupportsPassive",
+          "callee": "window.addEventListener",
+          "lineNumber": 199
+        },
+        {
+          "caller": "detectSupportsPassive",
+          "callee": "window.removeEventListener",
+          "lineNumber": 200
+        },
+        {
+          "caller": "isString",
+          "callee": "_typeof",
+          "lineNumber": 232
+        },
+        {
+          "caller": "isString",
+          "callee": "Object.prototype.toString.call",
+          "lineNumber": 232
+        },
+        {
+          "caller": "isDate",
+          "callee": "Object.prototype.toString.call",
+          "lineNumber": 235
+        },
+        {
+          "caller": "isDate",
+          "callee": "isNaN",
+          "lineNumber": 235
+        },
+        {
+          "caller": "isDate",
+          "callee": "unknown.valueOf",
+          "lineNumber": 235
+        },
+        {
+          "caller": "isObject",
+          "callee": "_typeof",
+          "lineNumber": 238
+        },
+        {
+          "caller": "isObject",
+          "callee": "Array.isArray",
+          "lineNumber": 238
+        },
+        {
+          "caller": "isEmptyObject",
+          "callee": "unknown.hasOwnProperty",
+          "lineNumber": 242
+        },
+        {
+          "caller": "isVideo",
+          "callee": "isYoutube",
+          "lineNumber": 253
+        },
+        {
+          "caller": "isVideo",
+          "callee": "isVimeo",
+          "lineNumber": 253
+        },
+        {
+          "caller": "isVideo",
+          "callee": "isHTML5",
+          "lineNumber": 253
+        },
+        {
+          "caller": "isHTML5",
+          "callee": "isNode",
+          "lineNumber": 256
+        },
+        {
+          "caller": "isIFrame",
+          "callee": "isNode",
+          "lineNumber": 259
+        },
+        {
+          "caller": "isYoutube",
+          "callee": "isIFrame",
+          "lineNumber": 262
+        },
+        {
+          "caller": "isYoutube",
+          "callee": "unknown.src.match",
+          "lineNumber": 262
+        },
+        {
+          "caller": "isVimeo",
+          "callee": "isIFrame",
+          "lineNumber": 265
+        },
+        {
+          "caller": "isVimeo",
+          "callee": "unknown.src.match",
+          "lineNumber": 265
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 273
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.isArray",
+          "lineNumber": 275
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array",
+          "lineNumber": 275
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.from",
+          "lineNumber": 275
+        },
+        {
+          "caller": "EventEmitter",
+          "callee": "_classCallCheck",
+          "lineNumber": 283
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 324
+        },
+        {
+          "caller": "Coordinate",
+          "callee": "_classCallCheck",
+          "lineNumber": 333
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 473
+        },
+        {
+          "caller": "_defineProperty",
+          "callee": "Object.defineProperty",
+          "lineNumber": 475
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.create",
+          "lineNumber": 481
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.setPrototypeOf",
+          "lineNumber": 481
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_classCallCheck",
+          "lineNumber": 507
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_possibleConstructorReturn",
+          "lineNumber": 509
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "(bulmaCarousel.__proto__ || Object.getPrototypeOf(bulmaCarousel)).call",
+          "lineNumber": 509
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.getPrototypeOf",
+          "lineNumber": 509
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_2__utils_type__[\"c\" /* isString */])",
+          "lineNumber": 511
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object",
+          "lineNumber": 511
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "document.querySelector",
+          "lineNumber": 511
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.keys(_this.element.dataset).filter(function (key) {\n      return Object.keys(__WEBPACK_IMPORTED_MODULE_12__defaultOptions__[\"a\" /* default */]).includes(key);\n    }).reduce",
+          "lineNumber": 519
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.keys(_this.element.dataset).filter",
+          "lineNumber": 519
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.keys",
+          "lineNumber": 519
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.keys(__WEBPACK_IMPORTED_MODULE_12__defaultOptions__[\"a\" /* default */]).includes",
+          "lineNumber": 520
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object.keys",
+          "lineNumber": 520
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_extends",
+          "lineNumber": 522
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_defineProperty",
+          "lineNumber": 522
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_extends",
+          "lineNumber": 525
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_0__utils_index__[\"a\" /* uuid */])",
+          "lineNumber": 527
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "Object",
+          "lineNumber": 527
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_this.onShow.bind",
+          "lineNumber": 529
+        },
+        {
+          "caller": "bulmaCarousel",
+          "callee": "_this._init",
+          "lineNumber": 532
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.isArray",
+          "lineNumber": 983
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array",
+          "lineNumber": 983
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.from",
+          "lineNumber": 983
+        },
+        {
+          "caller": "uuid",
+          "callee": "([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace",
+          "lineNumber": 987
+        },
+        {
+          "caller": "uuid",
+          "callee": "(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString",
+          "lineNumber": 988
+        },
+        {
+          "caller": "uuid",
+          "callee": "crypto.getRandomValues",
+          "lineNumber": 988
+        },
+        {
+          "caller": "isRtl",
+          "callee": "document.documentElement.getAttribute",
+          "lineNumber": 992
+        },
+        {
+          "caller": "defer",
+          "callee": "function (resolve, reject) {\n\t\tthis.resolve = resolve;\n\t\tthis.reject = reject;\n\t}.bind",
+          "lineNumber": 996
+        },
+        {
+          "caller": "defer",
+          "callee": "this.promise.then.bind",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "defer",
+          "callee": "this.promise.catch.bind",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "getNodeIndex",
+          "callee": "[].concat(_toConsumableArray(node.parentNode.children)).indexOf",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "getNodeIndex",
+          "callee": "[].concat",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "getNodeIndex",
+          "callee": "_toConsumableArray",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "camelize",
+          "callee": "str.replace",
+          "lineNumber": 1009
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1019
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.create",
+          "lineNumber": 1025
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.setPrototypeOf",
+          "lineNumber": 1025
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "_classCallCheck",
+          "lineNumber": 1043
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "_possibleConstructorReturn",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "(Autoplay.__proto__ || Object.getPrototypeOf(Autoplay)).call",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "Object.getPrototypeOf",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "_this.onVisibilityChange.bind",
+          "lineNumber": 1049
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "_this.onMouseEnter.bind",
+          "lineNumber": 1050
+        },
+        {
+          "caller": "Autoplay",
+          "callee": "_this.onMouseLeave.bind",
+          "lineNumber": 1051
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1209
+        },
+        {
+          "caller": "Breakpoints",
+          "callee": "_classCallCheck",
+          "lineNumber": 1217
+        },
+        {
+          "caller": "Breakpoints",
+          "callee": "this[onResize].bind",
+          "lineNumber": 1222
+        },
+        {
+          "caller": "Breakpoints",
+          "callee": "this._bindEvents",
+          "lineNumber": 1224
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1347
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.isArray",
+          "lineNumber": 1349
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array",
+          "lineNumber": 1349
+        },
+        {
+          "caller": "_toConsumableArray",
+          "callee": "Array.from",
+          "lineNumber": 1349
+        },
+        {
+          "caller": "Infinite",
+          "callee": "_classCallCheck",
+          "lineNumber": 1355
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1427
+        },
+        {
+          "caller": "Loop",
+          "callee": "_classCallCheck",
+          "lineNumber": 1435
+        },
+        {
+          "caller": "isInViewport",
+          "callee": "element.getBoundingClientRect",
+          "lineNumber": 1482
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1494
+        },
+        {
+          "caller": "Navigation",
+          "callee": "_classCallCheck",
+          "lineNumber": 1503
+        },
+        {
+          "caller": "Navigation",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_1__utils_detect_supportsPassive__[\"a\" /* default */])",
+          "lineNumber": 1508
+        },
+        {
+          "caller": "Navigation",
+          "callee": "Object",
+          "lineNumber": 1508
+        },
+        {
+          "caller": "Navigation",
+          "callee": "this.onPreviousClick.bind",
+          "lineNumber": 1510
+        },
+        {
+          "caller": "Navigation",
+          "callee": "this.onNextClick.bind",
+          "lineNumber": 1511
+        },
+        {
+          "caller": "Navigation",
+          "callee": "this.onKeyUp.bind",
+          "lineNumber": 1512
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1644
+        },
+        {
+          "caller": "Pagination",
+          "callee": "_classCallCheck",
+          "lineNumber": 1654
+        },
+        {
+          "caller": "Pagination",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_2__utils_detect_supportsPassive__[\"a\" /* default */])",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "Pagination",
+          "callee": "Object",
+          "lineNumber": 1659
+        },
+        {
+          "caller": "Pagination",
+          "callee": "this.onPageClick.bind",
+          "lineNumber": 1661
+        },
+        {
+          "caller": "Pagination",
+          "callee": "this.onResize.bind",
+          "lineNumber": 1662
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1804
+        },
+        {
+          "caller": "Swipe",
+          "callee": "_classCallCheck",
+          "lineNumber": 1813
+        },
+        {
+          "caller": "Swipe",
+          "callee": "Object(__WEBPACK_IMPORTED_MODULE_1__utils_detect_supportsPassive__[\"a\" /* default */])",
+          "lineNumber": 1817
+        },
+        {
+          "caller": "Swipe",
+          "callee": "Object",
+          "lineNumber": 1817
+        },
+        {
+          "caller": "Swipe",
+          "callee": "this.onStartDrag.bind",
+          "lineNumber": 1819
+        },
+        {
+          "caller": "Swipe",
+          "callee": "this.onMoveDrag.bind",
+          "lineNumber": 1820
+        },
+        {
+          "caller": "Swipe",
+          "callee": "this.onStopDrag.bind",
+          "lineNumber": 1821
+        },
+        {
+          "caller": "Swipe",
+          "callee": "this._init",
+          "lineNumber": 1823
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 1946
+        },
+        {
+          "caller": "Transitioner",
+          "callee": "_classCallCheck",
+          "lineNumber": 1955
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 2047
+        },
+        {
+          "caller": "Fade",
+          "callee": "_classCallCheck",
+          "lineNumber": 2057
+        },
+        {
+          "caller": "Fade",
+          "callee": "_extends",
+          "lineNumber": 2061
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 2182
+        },
+        {
+          "caller": "Translate",
+          "callee": "_classCallCheck",
+          "lineNumber": 2193
+        },
+        {
+          "caller": "Translate",
+          "callee": "_extends",
+          "lineNumber": 2197
+        },
+        {
+          "caller": "Translate",
+          "callee": "this.onTransitionEnd.bind",
+          "lineNumber": 2199
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "docs/static/js/bulma-slider.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 461,
+      "nonEmptyLines": 387,
+      "callGraph": [
+        {
+          "caller": "__webpack_require__",
+          "callee": "modules[moduleId].call",
+          "lineNumber": 30
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 86
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.create",
+          "lineNumber": 94
+        },
+        {
+          "caller": "_inherits",
+          "callee": "Object.setPrototypeOf",
+          "lineNumber": 94
+        },
+        {
+          "caller": "isString",
+          "callee": "_typeof",
+          "lineNumber": 99
+        },
+        {
+          "caller": "isString",
+          "callee": "Object.prototype.toString.call",
+          "lineNumber": 99
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "_classCallCheck",
+          "lineNumber": 108
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "_possibleConstructorReturn",
+          "lineNumber": 110
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "(bulmaSlider.__proto__ || Object.getPrototypeOf(bulmaSlider)).call",
+          "lineNumber": 110
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "Object.getPrototypeOf",
+          "lineNumber": 110
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "document.querySelector",
+          "lineNumber": 112
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "_extends",
+          "lineNumber": 120
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "_this.onSliderInput.bind",
+          "lineNumber": 122
+        },
+        {
+          "caller": "bulmaSlider",
+          "callee": "_this.init",
+          "lineNumber": 124
+        },
+        {
+          "caller": "defineProperties",
+          "callee": "Object.defineProperty",
+          "lineNumber": 281
+        },
+        {
+          "caller": "EventEmitter",
+          "callee": "_classCallCheck",
+          "lineNumber": 289
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "docs/static/js/index.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "preloadInterpolationImages",
+          "startLine": 7,
+          "endLine": 13,
+          "params": []
+        },
+        {
+          "name": "setInterpolationImage",
+          "startLine": 15,
+          "endLine": 20,
+          "params": [
+            "i"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "preloadInterpolationImages",
+          "callee": "String(i).padStart",
+          "lineNumber": 9
+        },
+        {
+          "caller": "preloadInterpolationImages",
+          "callee": "String",
+          "lineNumber": 9
+        },
+        {
+          "caller": "setInterpolationImage",
+          "callee": "$('#interpolation-image-wrapper').empty().append",
+          "lineNumber": 19
+        },
+        {
+          "caller": "setInterpolationImage",
+          "callee": "$('#interpolation-image-wrapper').empty",
+          "lineNumber": 19
+        },
+        {
+          "caller": "setInterpolationImage",
+          "callee": "$",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/sousvide/flight/command_helper.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 163,
+      "nonEmptyLines": 126,
+      "functions": [
+        {
+          "name": "get_camera",
+          "startLine": 17,
+          "endLine": 48,
+          "params": [
+            "height",
+            "width",
+            "fps"
+          ]
+        },
+        {
+          "name": "get_image",
+          "startLine": 50,
+          "endLine": 67,
+          "params": [
+            "pipeline"
+          ]
+        },
+        {
+          "name": "close_camera",
+          "startLine": 69,
+          "endLine": 71,
+          "params": [
+            "pipeline"
+          ]
+        },
+        {
+          "name": "vo2x",
+          "startLine": 73,
+          "endLine": 88,
+          "params": [
+            "vo",
+            "T_12"
+          ]
+        },
+        {
+          "name": "x_transform",
+          "startLine": 90,
+          "endLine": 103,
+          "params": [
+            "x1",
+            "T_12"
+          ]
+        },
+        {
+          "name": "am2unf",
+          "startLine": 105,
+          "endLine": 107,
+          "params": [
+            "am"
+          ]
+        },
+        {
+          "name": "vrs2uvr",
+          "startLine": 109,
+          "endLine": 111,
+          "params": [
+            "vr"
+          ]
+        },
+        {
+          "name": "publish_uvr_command",
+          "startLine": 113,
+          "endLine": 126,
+          "params": [
+            "timestamp",
+            "uvr",
+            "vrs_publisher"
+          ]
+        },
+        {
+          "name": "engage_offboard_control_mode",
+          "startLine": 128,
+          "endLine": 139,
+          "params": [
+            "timestamp",
+            "vc_publisher"
+          ]
+        },
+        {
+          "name": "land",
+          "startLine": 141,
+          "endLine": 152,
+          "params": [
+            "timestamp",
+            "vc_publisher"
+          ]
+        },
+        {
+          "name": "heartbeat_offboard_control_mode",
+          "startLine": 154,
+          "endLine": 163,
+          "params": [
+            "timestamp",
+            "ocm_publisher"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_camera",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "get_image",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "close_camera",
+          "line": 69,
+          "isDefault": false
+        },
+        {
+          "name": "vo2x",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "x_transform",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "am2unf",
+          "line": 105,
+          "isDefault": false
+        },
+        {
+          "name": "vrs2uvr",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "publish_uvr_command",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "engage_offboard_control_mode",
+          "line": 128,
+          "isDefault": false
+        },
+        {
+          "name": "land",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "heartbeat_offboard_control_mode",
+          "line": 154,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_camera",
+          "callee": "print",
+          "lineNumber": 20
+        },
+        {
+          "caller": "get_camera",
+          "callee": "rs.pipeline",
+          "lineNumber": 23
+        },
+        {
+          "caller": "get_camera",
+          "callee": "rs.config",
+          "lineNumber": 24
+        },
+        {
+          "caller": "get_camera",
+          "callee": "rs.pipeline_wrapper",
+          "lineNumber": 27
+        },
+        {
+          "caller": "get_camera",
+          "callee": "config.resolve",
+          "lineNumber": 29
+        },
+        {
+          "caller": "get_camera",
+          "callee": "pipeline_profile.get_device",
+          "lineNumber": 30
+        },
+        {
+          "caller": "get_camera",
+          "callee": "str",
+          "lineNumber": 31
+        },
+        {
+          "caller": "get_camera",
+          "callee": "device.get_info",
+          "lineNumber": 31
+        },
+        {
+          "caller": "get_camera",
+          "callee": "config.enable_stream",
+          "lineNumber": 33
+        },
+        {
+          "caller": "get_camera",
+          "callee": "config.enable_stream",
+          "lineNumber": 34
+        },
+        {
+          "caller": "get_camera",
+          "callee": "pipeline.start",
+          "lineNumber": 35
+        },
+        {
+          "caller": "get_camera",
+          "callee": "profile.get_device().first_color_sensor",
+          "lineNumber": 38
+        },
+        {
+          "caller": "get_camera",
+          "callee": "profile.get_device",
+          "lineNumber": 38
+        },
+        {
+          "caller": "get_camera",
+          "callee": "color_sensor.set_option",
+          "lineNumber": 39
+        },
+        {
+          "caller": "get_camera",
+          "callee": "color_sensor.set_option",
+          "lineNumber": 40
+        },
+        {
+          "caller": "get_camera",
+          "callee": "print",
+          "lineNumber": 42
+        },
+        {
+          "caller": "get_camera",
+          "callee": "print",
+          "lineNumber": 43
+        },
+        {
+          "caller": "get_camera",
+          "callee": "print",
+          "lineNumber": 45
+        },
+        {
+          "caller": "get_image",
+          "callee": "pipeline.try_wait_for_frames",
+          "lineNumber": 54
+        },
+        {
+          "caller": "get_image",
+          "callee": "frames.get_color_frame",
+          "lineNumber": 56
+        },
+        {
+          "caller": "get_image",
+          "callee": "frames.get_depth_frame",
+          "lineNumber": 57
+        },
+        {
+          "caller": "get_image",
+          "callee": "np.asanyarray",
+          "lineNumber": 60
+        },
+        {
+          "caller": "get_image",
+          "callee": "color_frame.get_data",
+          "lineNumber": 60
+        },
+        {
+          "caller": "get_image",
+          "callee": "np.asanyarray",
+          "lineNumber": 61
+        },
+        {
+          "caller": "get_image",
+          "callee": "depth_frame.get_data",
+          "lineNumber": 61
+        },
+        {
+          "caller": "get_image",
+          "callee": "np.zeros",
+          "lineNumber": 67
+        },
+        {
+          "caller": "get_image",
+          "callee": "np.zeros",
+          "lineNumber": 67
+        },
+        {
+          "caller": "close_camera",
+          "callee": "pipeline.stop",
+          "lineNumber": 71
+        },
+        {
+          "caller": "vo2x",
+          "callee": "np.array",
+          "lineNumber": 76
+        },
+        {
+          "caller": "vo2x",
+          "callee": "np.array",
+          "lineNumber": 81
+        },
+        {
+          "caller": "vo2x",
+          "callee": "np.linalg.norm",
+          "lineNumber": 82
+        },
+        {
+          "caller": "vo2x",
+          "callee": "x_transform",
+          "lineNumber": 86
+        },
+        {
+          "caller": "x_transform",
+          "callee": "np.zeros",
+          "lineNumber": 95
+        },
+        {
+          "caller": "x_transform",
+          "callee": "R.from_quat(x1[6:10]).as_matrix",
+          "lineNumber": 96
+        },
+        {
+          "caller": "x_transform",
+          "callee": "R.from_quat",
+          "lineNumber": 96
+        },
+        {
+          "caller": "x_transform",
+          "callee": "R.from_matrix(R_12@R_b1).as_quat",
+          "lineNumber": 101
+        },
+        {
+          "caller": "x_transform",
+          "callee": "R.from_matrix",
+          "lineNumber": 101
+        },
+        {
+          "caller": "am2unf",
+          "callee": "np.array",
+          "lineNumber": 107
+        },
+        {
+          "caller": "vrs2uvr",
+          "callee": "np.array",
+          "lineNumber": 111
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "VehicleRatesSetpoint",
+          "lineNumber": 117
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "np.array([0.0, 0.0, uvr[0]]).astype",
+          "lineNumber": 118
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "np.array",
+          "lineNumber": 118
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "float",
+          "lineNumber": 119
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "float",
+          "lineNumber": 120
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "float",
+          "lineNumber": 121
+        },
+        {
+          "caller": "publish_uvr_command",
+          "callee": "vrs_publisher.publish",
+          "lineNumber": 126
+        },
+        {
+          "caller": "engage_offboard_control_mode",
+          "callee": "VehicleCommand",
+          "lineNumber": 131
+        },
+        {
+          "caller": "engage_offboard_control_mode",
+          "callee": "vc_publisher.publish",
+          "lineNumber": 139
+        },
+        {
+          "caller": "land",
+          "callee": "VehicleCommand",
+          "lineNumber": 144
+        },
+        {
+          "caller": "land",
+          "callee": "vc_publisher.publish",
+          "lineNumber": 152
+        },
+        {
+          "caller": "heartbeat_offboard_control_mode",
+          "callee": "OffboardControlMode",
+          "lineNumber": 157
+        },
+        {
+          "caller": "heartbeat_offboard_control_mode",
+          "callee": "ocm_publisher.publish",
+          "lineNumber": 163
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    }
+  ]
+}

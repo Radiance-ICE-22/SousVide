@@ -1,0 +1,19 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "batchFiles": [
+    {"path": "src/sousvide/flight/deploy_figs.py", "language": "python", "sizeLines": 215, "fileCategory": "code"},
+    {"path": "src/sousvide/synthesize/data_compress_helper.py", "language": "python", "sizeLines": 79, "fileCategory": "code"},
+    {"path": "src/sousvide/synthesize/rollout_generator.py", "language": "python", "sizeLines": 292, "fileCategory": "code"},
+    {"path": "src/sousvide/synthesize/synthesize_helper.py", "language": "python", "sizeLines": 184, "fileCategory": "code"},
+    {"path": "src/sousvide/utilities/sousvide_utilities.py", "language": "python", "sizeLines": 103, "fileCategory": "code"},
+    {"path": "src/sousvide/visualize/record_flight.py", "language": "python", "sizeLines": 250, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "src/sousvide/flight/deploy_figs.py": ["src/sousvide/control/pilot.py","src/sousvide/flight/flight_helper.py","src/sousvide/synthesize/synthesize_helper.py","src/sousvide/utilities/sousvide_utilities.py","src/sousvide/visualize/record_flight.py","src/sousvide/visualize/rich_utilities.py"],
+    "src/sousvide/synthesize/data_compress_helper.py": [],
+    "src/sousvide/synthesize/rollout_generator.py": ["src/sousvide/synthesize/data_compress_helper.py","src/sousvide/synthesize/synthesize_helper.py","src/sousvide/utilities/sousvide_utilities.py","src/sousvide/visualize/rich_utilities.py"],
+    "src/sousvide/synthesize/synthesize_helper.py": [],
+    "src/sousvide/utilities/sousvide_utilities.py": [],
+    "src/sousvide/visualize/record_flight.py": []
+  }
+}

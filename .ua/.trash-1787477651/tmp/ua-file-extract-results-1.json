@@ -1,0 +1,1394 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 9,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 9,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/sousvide/control/network_factory.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 57,
+      "functions": [
+        {
+          "name": "generate_network",
+          "startLine": 16,
+          "endLine": 64,
+          "params": [
+            "net_config",
+            "net_name",
+            "pilot_path"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "generate_network",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "generate_network",
+          "callee": "os.path.join",
+          "lineNumber": 37
+        },
+        {
+          "caller": "generate_network",
+          "callee": "os.path.isfile",
+          "lineNumber": 40
+        },
+        {
+          "caller": "generate_network",
+          "callee": "torch.load",
+          "lineNumber": 41
+        },
+        {
+          "caller": "generate_network",
+          "callee": "BaseNet",
+          "lineNumber": 45
+        },
+        {
+          "caller": "generate_network",
+          "callee": "DINO",
+          "lineNumber": 48
+        },
+        {
+          "caller": "generate_network",
+          "callee": "SIFU",
+          "lineNumber": 51
+        },
+        {
+          "caller": "generate_network",
+          "callee": "SVNet",
+          "lineNumber": 54
+        },
+        {
+          "caller": "generate_network",
+          "callee": "DNNet",
+          "lineNumber": 56
+        },
+        {
+          "caller": "generate_network",
+          "callee": "Pave",
+          "lineNumber": 58
+        },
+        {
+          "caller": "generate_network",
+          "callee": "ValueError",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/sousvide/control/network_helper.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 207,
+      "nonEmptyLines": 160,
+      "functions": [
+        {
+          "name": "get_max_length",
+          "startLine": 8,
+          "endLine": 28,
+          "params": [
+            "io_idxs"
+          ]
+        },
+        {
+          "name": "get_io_refr",
+          "startLine": 30,
+          "endLine": 48,
+          "params": [
+            "io_type"
+          ]
+        },
+        {
+          "name": "get_io_dims",
+          "startLine": 50,
+          "endLine": 66,
+          "params": [
+            "io_idxs"
+          ]
+        },
+        {
+          "name": "get_io_sizes",
+          "startLine": 68,
+          "endLine": 85,
+          "params": [
+            "io_idxs"
+          ]
+        },
+        {
+          "name": "get_io_idxs",
+          "startLine": 87,
+          "endLine": 150,
+          "params": [
+            "io_cfgs"
+          ]
+        },
+        {
+          "name": "extract_io",
+          "startLine": 152,
+          "endLine": 185,
+          "params": [
+            "io_srcs",
+            "io_idxs"
+          ]
+        },
+        {
+          "name": "generate_positional_encoding",
+          "startLine": 187,
+          "endLine": 207,
+          "params": [
+            "d_model",
+            "max_seq_len"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "get_max_length",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "get_io_refr",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "get_io_dims",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "get_io_sizes",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "get_io_idxs",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "extract_io",
+          "line": 152,
+          "isDefault": false
+        },
+        {
+          "name": "generate_positional_encoding",
+          "line": 187,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "get_max_length",
+          "callee": "get_io_refr",
+          "lineNumber": 18
+        },
+        {
+          "caller": "get_max_length",
+          "callee": "io_idxs.items",
+          "lineNumber": 21
+        },
+        {
+          "caller": "get_max_length",
+          "callee": "max",
+          "lineNumber": 24
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "os.path.dirname",
+          "lineNumber": 39
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "os.path.dirname",
+          "lineNumber": 40
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "os.path.dirname",
+          "lineNumber": 40
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "os.path.dirname",
+          "lineNumber": 40
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "os.path.join",
+          "lineNumber": 41
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "open",
+          "lineNumber": 45
+        },
+        {
+          "caller": "get_io_refr",
+          "callee": "json.load",
+          "lineNumber": 46
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "io_idxs.items",
+          "lineNumber": 62
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "len",
+          "lineNumber": 63
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "get_io_dims",
+          "lineNumber": 79
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "io_dims.items",
+          "lineNumber": 82
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "math.prod",
+          "lineNumber": 83
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "get_io_refr",
+          "lineNumber": 118
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "get_io_refr",
+          "lineNumber": 119
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "get_io_refr",
+          "lineNumber": 120
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "io_cfgs.items",
+          "lineNumber": 125
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "io[-1].isdigit",
+          "lineNumber": 127
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "isinstance",
+          "lineNumber": 134
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "idxs.append",
+          "lineNumber": 135
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "torch.arange",
+          "lineNumber": 135
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "isinstance",
+          "lineNumber": 136
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "all",
+          "lineNumber": 136
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "isinstance",
+          "lineNumber": 136
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "idxs.append",
+          "lineNumber": 137
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "torch.tensor",
+          "lineNumber": 137
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "isinstance",
+          "lineNumber": 138
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "all",
+          "lineNumber": 138
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "isinstance",
+          "lineNumber": 138
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "refr.index",
+          "lineNumber": 139
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "idxs.append",
+          "lineNumber": 140
+        },
+        {
+          "caller": "get_io_idxs",
+          "callee": "torch.tensor",
+          "lineNumber": 140
+        },
+        {
+          "caller": "extract_io",
+          "callee": "io_idxs.items",
+          "lineNumber": 167
+        },
+        {
+          "caller": "extract_io",
+          "callee": "name[-1].isdigit",
+          "lineNumber": 169
+        },
+        {
+          "caller": "extract_io",
+          "callee": "enumerate",
+          "lineNumber": 176
+        },
+        {
+          "caller": "extract_io",
+          "callee": "idx.to",
+          "lineNumber": 178
+        },
+        {
+          "caller": "extract_io",
+          "callee": "torch.index_select",
+          "lineNumber": 181
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.zeros",
+          "lineNumber": 201
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.arange(0, max_seq_len, dtype=torch.float).unsqueeze",
+          "lineNumber": 202
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.arange",
+          "lineNumber": 202
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.exp",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.arange(0, d_model, 2).float",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.arange",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.log",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.tensor",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.sin",
+          "lineNumber": 204
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "torch.cos",
+          "lineNumber": 205
+        },
+        {
+          "caller": "generate_positional_encoding",
+          "callee": "pe.unsqueeze",
+          "lineNumber": 207
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/base_net.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 89,
+      "classes": [
+        {
+          "name": "BaseNet",
+          "startLine": 7,
+          "endLine": 114,
+          "methods": [
+            "__init__",
+            "get_io_dims",
+            "get_io_sizes",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BaseNet",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "nh.get_io_idxs",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nh.get_io_idxs",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nh.get_io_idxs",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "nh.get_io_idxs",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "inputs.values",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "input.values",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "all",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "isinstance",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "max",
+          "lineNumber": 52
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 64
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "nh.get_io_dims",
+          "lineNumber": 74
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "nh.get_io_dims",
+          "lineNumber": 75
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "nh.get_io_dims",
+          "lineNumber": 76
+        },
+        {
+          "caller": "get_io_dims",
+          "callee": "nh.get_io_dims",
+          "lineNumber": 77
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "nh.get_io_sizes",
+          "lineNumber": 98
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "nh.get_io_sizes",
+          "lineNumber": 99
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "nh.get_io_sizes",
+          "lineNumber": 100
+        },
+        {
+          "caller": "get_io_sizes",
+          "callee": "nh.get_io_sizes",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/dnnet.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 66,
+      "classes": [
+        {
+          "name": "DNNet",
+          "startLine": 9,
+          "endLine": 85,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DNNet",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(DNNet, self).__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 31
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Conv2d",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 33
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Conv2d",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 35
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Conv2d",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp.append",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp.append",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 44
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp.append",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 45
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp.append",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 53
+        },
+        {
+          "caller": "forward",
+          "callee": "xnn_ft.permute",
+          "lineNumber": 74
+        },
+        {
+          "caller": "forward",
+          "callee": "ynn_hm.squeeze(1).flatten",
+          "lineNumber": 76
+        },
+        {
+          "caller": "forward",
+          "callee": "ynn_hm.squeeze",
+          "lineNumber": 76
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/feature_extractors.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 55,
+      "classes": [
+        {
+          "name": "VitB16",
+          "startLine": 10,
+          "endLine": 34,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        },
+        {
+          "name": "DINO",
+          "startLine": 36,
+          "endLine": 72,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VitB16",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "DINO",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 12
+        },
+        {
+          "caller": "__init__",
+          "callee": "vit_b_16",
+          "lineNumber": 13
+        },
+        {
+          "caller": "forward",
+          "callee": "self.vit._process_input",
+          "lineNumber": 17
+        },
+        {
+          "caller": "forward",
+          "callee": "self.vit.class_token.expand",
+          "lineNumber": 21
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 22
+        },
+        {
+          "caller": "forward",
+          "callee": "self.vit.encoder",
+          "lineNumber": 25
+        },
+        {
+          "caller": "forward",
+          "callee": "ynn.squeeze",
+          "lineNumber": 31
+        },
+        {
+          "caller": "forward",
+          "callee": "cls.squeeze",
+          "lineNumber": 32
+        },
+        {
+          "caller": "__init__",
+          "callee": "super(DINO, self).__init__",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "AutoModel.from_pretrained",
+          "lineNumber": 49
+        },
+        {
+          "caller": "forward",
+          "callee": "self.networks",
+          "lineNumber": 60
+        },
+        {
+          "caller": "forward",
+          "callee": "ynn_vit.last_hidden_state[:,1:,:].squeeze",
+          "lineNumber": 63
+        },
+        {
+          "caller": "forward",
+          "callee": "pch.view",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/pave.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 107,
+      "nonEmptyLines": 81,
+      "classes": [
+        {
+          "name": "Pave",
+          "startLine": 9,
+          "endLine": 107,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Pave",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(Pave, self).__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_io_sizes",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "actor.append",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "actor.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "actor.append",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "critic.append",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 47
+        },
+        {
+          "caller": "__init__",
+          "callee": "critic.append",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 48
+        },
+        {
+          "caller": "__init__",
+          "callee": "critic.append",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 54
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 56
+        },
+        {
+          "caller": "forward",
+          "callee": "xnn.view",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "xnn.size",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "self.networks[\"actor\"](xnn).squeeze",
+          "lineNumber": 80
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.Tensor",
+          "lineNumber": 84
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.distributions.Normal",
+          "lineNumber": 85
+        },
+        {
+          "caller": "forward",
+          "callee": "dist.sample",
+          "lineNumber": 86
+        },
+        {
+          "caller": "forward",
+          "callee": "dist.log_prob",
+          "lineNumber": 87
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.zeros_like",
+          "lineNumber": 95
+        },
+        {
+          "caller": "forward",
+          "callee": "self.networks[\"critic\"](Xnn[\"current\"]).squeeze",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/sifu.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "SIFU",
+          "startLine": 6,
+          "endLine": 71,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SIFU",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(SIFU, self).__init__",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_io_sizes",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 45
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.flatten",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sousvide/control/networks/svnet.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 96,
+      "nonEmptyLines": 72,
+      "classes": [
+        {
+          "name": "SVNet",
+          "startLine": 9,
+          "endLine": 96,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SVNet",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(SVNet, self).__init__",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 25
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_io_sizes",
+          "lineNumber": 28
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp0.append",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 39
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp0.append",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp0.append",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 41
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp1.append",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 49
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp1.append",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 50
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp1.append",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 51
+        },
+        {
+          "caller": "__init__",
+          "callee": "mlp1.append",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 55
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 58
+        },
+        {
+          "caller": "__init__",
+          "callee": "squeezenet1_1",
+          "lineNumber": 59
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 60
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 61
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 86
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.cat",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/sousvide/control/policy.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 91,
+      "nonEmptyLines": 71,
+      "classes": [
+        {
+          "name": "Policy",
+          "startLine": 9,
+          "endLine": 91,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Policy",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super().__init__",
+          "lineNumber": 31
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 31
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ModuleDict",
+          "lineNumber": 34
+        },
+        {
+          "caller": "__init__",
+          "callee": "policy_config[\"networks\"].items",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nf.generate_network",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "max",
+          "lineNumber": 40
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.values",
+          "lineNumber": 43
+        },
+        {
+          "caller": "__init__",
+          "callee": "int",
+          "lineNumber": 49
+        },
+        {
+          "caller": "forward",
+          "callee": "self.networks.items",
+          "lineNumber": 71
+        },
+        {
+          "caller": "forward",
+          "callee": "nh.extract_io",
+          "lineNumber": 74
+        },
+        {
+          "caller": "forward",
+          "callee": "network",
+          "lineNumber": 77
+        },
+        {
+          "caller": "forward",
+          "callee": "next",
+          "lineNumber": 84
+        },
+        {
+          "caller": "forward",
+          "callee": "iter",
+          "lineNumber": 84
+        },
+        {
+          "caller": "forward",
+          "callee": "Ynn_net.values",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

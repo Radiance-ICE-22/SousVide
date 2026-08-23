@@ -1,0 +1,804 @@
+{
+  "scriptCompleted": true,
+  "entryPointCandidates": [
+    {
+      "id": "document:README.md",
+      "score": 5,
+      "name": "README.md",
+      "summary": "Top-level project readme for SousVide (Scene Understanding via Synthesized Visual Inertial Data from Experts), covering installation steps (submodules, ACADOS build, conda environment, GSplat download) and pointing users to the notebooks/ folder for FiGS and SousVide usage examples."
+    },
+    {
+      "id": "file:docs/static/js/index.js",
+      "score": 3,
+      "name": "index.js",
+      "summary": "Page-specific script for the project landing page that wires up the navbar burger menu, initializes the Bulma carousel and slider widgets, and preloads/animates the interpolation image sequence."
+    },
+    {
+      "id": "file:src/sousvide/synthesize/rollout_generator.py",
+      "score": 2,
+      "name": "rollout_generator.py",
+      "summary": "Generates synthetic rollout training data by simulating an expert (VehicleRateMPC) controller over perturbed frames and trajectory batches in FiGS, then saves the resulting trajectories and images (optionally compressed) for downstream policy training."
+    },
+    {
+      "id": "file:src/sousvide/instruct/train_policy.py",
+      "score": 2,
+      "name": "train_policy.py",
+      "summary": "Orchestrates supervised training of student policy networks: regenerates observation data if requested, runs per-student training loops with checkpointing, periodic in-training flight evaluation via deploy_figs, best-checkpoint selection, and rich progress reporting."
+    },
+    {
+      "id": "file:.gitmodules",
+      "score": 2,
+      "name": ".gitmodules",
+      "summary": "Git submodule manifest that registers the external FiGS simulator repository (github.com/StanfordMSL/FiGS.git) as a submodule of the SousVide project."
+    }
+  ],
+  "fanInRanking": [
+    {
+      "id": "file:src/sousvide/control/networks/base_net.py",
+      "fanIn": 8,
+      "name": "base_net.py"
+    },
+    {
+      "id": "file:src/sousvide/control/pilot.py",
+      "fanIn": 8,
+      "name": "pilot.py"
+    },
+    {
+      "id": "file:src/sousvide/control/network_helper.py",
+      "fanIn": 7,
+      "name": "network_helper.py"
+    },
+    {
+      "id": "file:src/sousvide/visualize/rich_utilities.py",
+      "fanIn": 7,
+      "name": "rich_utilities.py"
+    },
+    {
+      "id": "file:src/sousvide/control/network_factory.py",
+      "fanIn": 4,
+      "name": "network_factory.py"
+    },
+    {
+      "id": "file:src/sousvide/control/policy.py",
+      "fanIn": 2,
+      "name": "policy.py"
+    },
+    {
+      "id": "file:src/sousvide/flight/flight_helper.py",
+      "fanIn": 2,
+      "name": "flight_helper.py"
+    },
+    {
+      "id": "file:src/sousvide/visualize/plot_3D.py",
+      "fanIn": 2,
+      "name": "plot_3D.py"
+    },
+    {
+      "id": "file:src/sousvide/visualize/plot_utilities.py",
+      "fanIn": 2,
+      "name": "plot_utilities.py"
+    },
+    {
+      "id": "file:src/sousvide/synthesize/data_compress_helper.py",
+      "fanIn": 2,
+      "name": "data_compress_helper.py"
+    },
+    {
+      "id": "file:src/sousvide/synthesize/synthesize_helper.py",
+      "fanIn": 2,
+      "name": "synthesize_helper.py"
+    },
+    {
+      "id": "file:src/sousvide/utilities/sousvide_utilities.py",
+      "fanIn": 2,
+      "name": "sousvide_utilities.py"
+    },
+    {
+      "id": "config:configs/captures/default.json",
+      "fanIn": 2,
+      "name": "default.json"
+    },
+    {
+      "id": "config:configs/nnio/sequence.json",
+      "fanIn": 2,
+      "name": "sequence.json"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/dnnet.py",
+      "fanIn": 1,
+      "name": "dnnet.py"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/feature_extractors.py",
+      "fanIn": 1,
+      "name": "feature_extractors.py"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/pave.py",
+      "fanIn": 1,
+      "name": "pave.py"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/sifu.py",
+      "fanIn": 1,
+      "name": "sifu.py"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/svnet.py",
+      "fanIn": 1,
+      "name": "svnet.py"
+    },
+    {
+      "id": "file:src/sousvide/visualize/plot_time.py",
+      "fanIn": 1,
+      "name": "plot_time.py"
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "file:src/sousvide/instruct/train_policy.py",
+      "fanOut": 8,
+      "name": "train_policy.py"
+    },
+    {
+      "id": "file:src/sousvide/control/network_factory.py",
+      "fanOut": 7,
+      "name": "network_factory.py"
+    },
+    {
+      "id": "file:src/sousvide/flight/deploy_figs.py",
+      "fanOut": 6,
+      "name": "deploy_figs.py"
+    },
+    {
+      "id": "file:src/sousvide/control/policy.py",
+      "fanOut": 4,
+      "name": "policy.py"
+    },
+    {
+      "id": "file:src/sousvide/synthesize/rollout_generator.py",
+      "fanOut": 4,
+      "name": "rollout_generator.py"
+    },
+    {
+      "id": "file:src/sousvide/synthesize/observation_generator.py",
+      "fanOut": 4,
+      "name": "observation_generator.py"
+    },
+    {
+      "id": "config:configs/nnio/basic.json",
+      "fanOut": 4,
+      "name": "basic.json"
+    },
+    {
+      "id": "file:src/sousvide/visualize/plot_learning.py",
+      "fanOut": 3,
+      "name": "plot_learning.py"
+    },
+    {
+      "id": "file:src/sousvide/visualize/plot_synthesize.py",
+      "fanOut": 3,
+      "name": "plot_synthesize.py"
+    },
+    {
+      "id": "config:configs/nnio/image.json",
+      "fanOut": 3,
+      "name": "image.json"
+    },
+    {
+      "id": "config:configs/pilots/Iceman.json",
+      "fanOut": 3,
+      "name": "Iceman.json"
+    },
+    {
+      "id": "config:configs/methods/eval_challenged.json",
+      "fanOut": 2,
+      "name": "eval_challenged.json"
+    },
+    {
+      "id": "config:configs/methods/eval_nominal.json",
+      "fanOut": 2,
+      "name": "eval_nominal.json"
+    },
+    {
+      "id": "config:configs/nnio/sequence.json",
+      "fanOut": 2,
+      "name": "sequence.json"
+    },
+    {
+      "id": "config:configs/pilots/Jester.json",
+      "fanOut": 2,
+      "name": "Jester.json"
+    },
+    {
+      "id": "config:configs/frames/carl.json",
+      "fanOut": 2,
+      "name": "carl.json"
+    },
+    {
+      "id": "file:docs/index.html",
+      "fanOut": 2,
+      "name": "index.html"
+    },
+    {
+      "id": "file:docs/static/js/index.js",
+      "fanOut": 2,
+      "name": "index.js"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/base_net.py",
+      "fanOut": 1,
+      "name": "base_net.py"
+    },
+    {
+      "id": "file:src/sousvide/control/networks/dnnet.py",
+      "fanOut": 1,
+      "name": "dnnet.py"
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:docs/static/js/index.js",
+    "order": [
+      "file:docs/static/js/index.js"
+    ],
+    "depthMap": {
+      "file:docs/static/js/index.js": 0
+    },
+    "byDepth": {
+      "0": [
+        "file:docs/static/js/index.js"
+      ]
+    }
+  },
+  "nonCodeFiles": {
+    "documentation": [
+      {
+        "id": "document:README.md",
+        "name": "README.md",
+        "type": "document",
+        "summary": "Top-level project readme for SousVide (Scene Understanding via Synthesized Visual Inertial Data from Experts), covering installation steps (submodules, ACADOS build, conda environment, GSplat download) and pointing users to the notebooks/ folder for FiGS and SousVide usage examples."
+      },
+      {
+        "id": "document:docs/static/css/bulma.css.map.txt",
+        "name": "bulma.css.map.txt",
+        "type": "document",
+        "summary": "Empty placeholder text file accompanying the vendored Bulma CSS source map, containing no analyzable content."
+      }
+    ],
+    "infrastructure": [],
+    "data": [],
+    "config": [
+      {
+        "id": "config:environment_x86.yml",
+        "name": "environment_x86.yml",
+        "type": "config",
+        "summary": "Conda environment specification (env name 'kitchen') pinning Python 3.10, PyTorch 2.1.2 with CUDA 11.8, and pip-installed research dependencies including nerfstudio, tiny-cuda-nn, and editable installs of the local FiGS and sousvide packages."
+      },
+      {
+        "id": "config:pyproject.toml",
+        "name": "pyproject.toml",
+        "type": "config",
+        "summary": "Python packaging configuration (setuptools build-backend) defining the 'sousvide' package, version 0.1.0, requiring Python >=3.10 with core scientific/ML dependencies (numpy, scipy, qpsolvers, albumentations, torch, torchvision, nerfstudio), and locating packages under src/."
+      },
+      {
+        "id": "config:configs/captures/default.json",
+        "name": "default.json",
+        "type": "config",
+        "summary": "Default capture configuration template with no camera intrinsics set, specifying image extraction settings (300 images, 20 marked, ArUco marker length/id) used as a fallback when generating training data from real-world video captures for GSplat reconstruction."
+      },
+      {
+        "id": "config:configs/captures/iphone15pro.json",
+        "name": "iphone15pro.json",
+        "type": "config",
+        "summary": "Capture device configuration for an iPhone 15 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data."
+      },
+      {
+        "id": "config:configs/captures/pixel8pro.json",
+        "name": "pixel8pro.json",
+        "type": "config",
+        "summary": "Capture device configuration for a Google Pixel 8 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data."
+      },
+      {
+        "id": "config:configs/courses/button_prod.json",
+        "name": "button_prod.json",
+        "type": "config",
+        "summary": "Drone flight course definition for a short 'button' production trajectory, specifying 3 timed keyframes of flat-output states (position, yaw, and derivatives) over about 4 seconds with no external force profile."
+      },
+      {
+        "id": "config:configs/courses/circuit.json",
+        "name": "circuit.json",
+        "type": "config",
+        "summary": "Drone flight course definition for a 'circuit' loop trajectory, specifying 10 timed keyframes of flat-output states spanning roughly 12 seconds with no external force profile."
+      },
+      {
+        "id": "config:configs/courses/infinity.json",
+        "name": "infinity.json",
+        "type": "config",
+        "summary": "Drone flight course definition for a figure-eight ('infinity') trajectory, specifying 7 timed keyframes of flat-output states spanning roughly 12 seconds with no external force profile."
+      },
+      {
+        "id": "config:configs/courses/traverse.json",
+        "name": "traverse.json",
+        "type": "config",
+        "summary": "Drone flight course definition for a 'traverse' trajectory, specifying 6 timed keyframes of flat-output states spanning roughly 14 seconds with no external force profile."
+      },
+      {
+        "id": "config:configs/methods/data_alpha.json",
+        "name": "data_alpha.json",
+        "type": "config",
+        "summary": "Lightweight data-generation method config for the synthesize pipeline: 3 short (2s) rollouts at 3Hz under mild domain randomization, with no injected model or sensor noise. Represents the smallest/fastest tier of a data-generation series (alpha/beta/gamma) likely used for quick smoke-testing of trajectory synthesis."
+      },
+      {
+        "id": "config:configs/methods/data_beta.json",
+        "name": "data_beta.json",
+        "type": "config",
+        "summary": "Medium-scale data-generation method config: 10 rollouts of 2s duration at 10Hz under the same domain-randomization ranges as data_alpha, with no injected noise. The middle tier of the alpha/beta/gamma data-generation progression."
+      },
+      {
+        "id": "config:configs/methods/data_gamma.json",
+        "name": "data_gamma.json",
+        "type": "config",
+        "summary": "Largest-scale data-generation method config: 20 rollouts of 3s duration at 10Hz with the same domain-randomization ranges as alpha/beta, producing the most extensive training dataset in the alpha/beta/gamma progression."
+      },
+      {
+        "id": "config:configs/methods/eval_challenged.json",
+        "name": "eval_challenged.json",
+        "type": "config",
+        "summary": "Evaluation method config for a 'challenged' scenario: 10 rollouts with wider initial-condition randomization than the nominal case plus injected sensor noise (large position/attitude std) and no model noise, used to stress-test a trained policy under perturbed starting conditions and noisy measurements."
+      },
+      {
+        "id": "config:configs/methods/eval_extreme.json",
+        "name": "eval_extreme.json",
+        "type": "config",
+        "summary": "Most demanding evaluation method config: combines wide initial-condition randomization with both model (process) noise and sensor noise at the largest magnitudes of the eval_* set, used to test worst-case policy robustness."
+      },
+      {
+        "id": "config:configs/methods/eval_mocap.json",
+        "name": "eval_mocap.json",
+        "type": "config",
+        "summary": "Evaluation method config modeling realistic motion-capture sensor noise: 10 rollouts with wide initial-condition randomization and small, hardware-realistic sensor noise standard deviations (no model noise), used to evaluate a policy under conditions approximating a real mocap-equipped test rig."
+      },
+      {
+        "id": "config:configs/methods/eval_nominal.json",
+        "name": "eval_nominal.json",
+        "type": "config",
+        "summary": "Baseline evaluation method config: 10 rollouts under the same mild domain-randomization ranges used for data generation, with no injected model or sensor noise, serving as the nominal/clean-condition benchmark against which challenged, extreme, and mocap evaluations are compared."
+      },
+      {
+        "id": "config:configs/methods/eval_single.json",
+        "name": "eval_single.json",
+        "type": "config",
+        "summary": "Minimal evaluation method config for a single deterministic rollout: randomization ranges and initial-condition perturbation are zeroed out and no noise is injected, used for debugging or visualizing one clean trajectory rather than statistical evaluation."
+      },
+      {
+        "id": "config:configs/nnio/basic.json",
+        "name": "basic.json",
+        "type": "config",
+        "summary": "Defines the field-name schema for the 'basic' neural network I/O modality, listing named channels for vehicle state (current pose/velocity/orientation), control command, physical parameters, wrench, resultant force/torque, and placeholder slots for feature vectors and class tokens."
+      },
+      {
+        "id": "config:configs/nnio/image.json",
+        "name": "image.json",
+        "type": "config",
+        "summary": "Defines the field-name schema for the 'image' neural network I/O modality, specifying spatial (null) dimensions plus named channel labels for rgb_image, depth_image, feature_array, and patches tensors."
+      },
+      {
+        "id": "config:configs/nnio/sequence.json",
+        "name": "sequence.json",
+        "type": "config",
+        "summary": "Defines the field-name schema for the 'sequence' neural network I/O modality, describing time-series inputs/outputs such as dynamics (dt, pose, velocity, orientation, thrust/torque command), wrenches, feature_arrays, and fo_horizon (flat-output horizon) trajectories."
+      },
+      {
+        "id": "config:configs/pilots/Iceman.json",
+        "name": "Iceman.json",
+        "type": "config",
+        "summary": "Pilot configuration for the 'Iceman' learned flight policy: defines a two-stage network architecture (a SIFU-style histNet that predicts dynamics parameters from state history, feeding an SVNet-style commNet that maps RGB images plus quaternion state to body-rate/thrust commands) running at 20 Hz, plus additive data-augmentation noise settings for training."
+      },
+      {
+        "id": "config:configs/pilots/Jester.json",
+        "name": "Jester.json",
+        "type": "config",
+        "summary": "Pilot configuration for the classical 'Jester' MPC-based policy, specifying trajectory planning (time-cost weight kT) and a 20 Hz tracking controller with state/input cost weights (Qk, Rk, QN), slack weights (Ws), and input bounds — no neural network is used."
+      },
+      {
+        "id": "config:configs/pilots/Maverick.json",
+        "name": "Maverick.json",
+        "type": "config",
+        "summary": "Pilot configuration for the 'Maverick' learned flight policy, extending the Iceman-style histNet/commNet architecture with additional altitude and velocity terms (pz, vx, vy, vz) in the dynamics and vision-conditioning inputs, running at 20 Hz with the same additive data-augmentation settings."
+      },
+      {
+        "id": "config:configs/pilots/Rooster.json",
+        "name": "Rooster.json",
+        "type": "config",
+        "summary": "Pilot configuration for the 'Rooster' learned flight policy: pairs a SIFU histNet dynamics estimator with a DINO-based vision feature extractor (featNet) and a plain dnnet command head (commNet) that consumes DINO patch/class-token features plus the estimated feature vector to produce flight commands."
+      },
+      {
+        "id": "config:configs/pilots/Viper.json",
+        "name": "Viper.json",
+        "type": "config",
+        "summary": "Pilot configuration for the classical 'Viper' MPC-based policy, mirroring Jester.json's plan/track structure with slightly different orientation cost weights (Qk) for the 20 Hz tracking controller."
+      },
+      {
+        "id": "config:configs/frames/carl.json",
+        "name": "carl.json",
+        "type": "config",
+        "summary": "Drone frame configuration defining the 'carl' vehicle's physical parameters (mass, inertia, rotor arm lengths, motor coefficients) and onboard camera intrinsics/extrinsics used by the FiGS simulator and flight stack."
+      }
+    ]
+  },
+  "clusters": [],
+  "layers": {
+    "count": 8,
+    "list": [
+      {
+        "id": "layer:control",
+        "name": "Control & Policy Networks",
+        "description": "Neural network architectures (SVNet, PAVE, SIFU, DNNet, feature extractors) and the pilot/policy classes that wrap them to produce flight control commands."
+      },
+      {
+        "id": "layer:flight",
+        "name": "Flight Deployment",
+        "description": "Real-world and FiGS-based simulated flight execution, drone command dispatch, and rollout deployment of trained pilots."
+      },
+      {
+        "id": "layer:instruct",
+        "name": "Training & Instruction",
+        "description": "Loss functions, synthesized-data loading, and the training loop used to teach pilot policies from expert-generated flight data."
+      },
+      {
+        "id": "layer:synthesize",
+        "name": "Data Synthesis",
+        "description": "Generation and compression of synthetic vision-and-inertial training data by rolling out expert trajectories through Gaussian-splat scenes."
+      },
+      {
+        "id": "layer:utility",
+        "name": "Shared Utilities & Visualization",
+        "description": "Cross-cutting math/parameter helpers plus plotting, console-reporting, and flight-recording utilities consumed by the flight, synthesize, and control layers."
+      },
+      {
+        "id": "layer:config",
+        "name": "Configuration",
+        "description": "JSON configuration data defining camera capture profiles, flight courses, training/evaluation methods, network I/O schemas, pilot definitions, and scene frames that parameterize the control and synthesis code."
+      },
+      {
+        "id": "layer:documentation",
+        "name": "Documentation & Examples",
+        "description": "The project's public GitHub Pages website (HTML/CSS/JS, including vendored Bulma carousel/slider assets) and the example notebooks demonstrating FiGS and SousVide usage end to end."
+      },
+      {
+        "id": "layer:project-metadata",
+        "name": "Project Metadata & Environment",
+        "description": "Repository-level project description, Python packaging metadata, the Conda environment definition, and the FiGS git submodule wiring that set up the research codebase's build and runtime environment."
+      }
+    ]
+  },
+  "nodeSummaryIndex": {
+    "file:src/sousvide/control/network_factory.py": {
+      "name": "network_factory.py",
+      "type": "file",
+      "summary": "Factory that instantiates or loads a neural network module for a pilot based on a configuration dictionary, dispatching to the correct network class (BaseNet, DINO, SIFU, SVNet, DNNet, Pave) by network_type and caching results as .pt files on disk."
+    },
+    "file:src/sousvide/control/network_helper.py": {
+      "name": "network_helper.py",
+      "type": "file",
+      "summary": "Utility module providing input/output index resolution, dimension/size computation, tensor extraction, and sinusoidal positional encoding generation shared across all SousVide network architectures."
+    },
+    "file:src/sousvide/control/networks/base_net.py": {
+      "name": "base_net.py",
+      "type": "file",
+      "summary": "Defines BaseNet, an abstract PyTorch nn.Module base class that normalizes input/output configs into prediction/deployment index maps and provides shared dimension/size helpers, which all SousVide network architectures subclass."
+    },
+    "file:src/sousvide/control/networks/dnnet.py": {
+      "name": "dnnet.py",
+      "type": "file",
+      "summary": "Defines DNNet, a SousVide command network subclass that fuses image features (via a small CNN), a heatmap channel, and history features through an MLP head to output a control command vector."
+    },
+    "file:src/sousvide/control/networks/feature_extractors.py": {
+      "name": "feature_extractors.py",
+      "type": "file",
+      "summary": "Defines vision transformer feature extractor networks: VitB16 (a torchvision ViT-B/16 wrapper exposing patch/class tokens) and DINO (a BaseNet subclass wrapping a pretrained DINOv2 model for image feature extraction)."
+    },
+    "file:src/sousvide/control/networks/pave.py": {
+      "name": "pave.py",
+      "type": "file",
+      "summary": "Defines Pave, a SousVide command network with separate actor and critic MLP heads that outputs a stochastic control action (sampled from a Normal distribution with log-probability) plus a critic value estimate."
+    },
+    "file:src/sousvide/control/networks/sifu.py": {
+      "name": "sifu.py",
+      "type": "file",
+      "summary": "Defines SIFU (Sequence Into Features Unified), a feedforward MLP network that maps history sequences to estimated drone parameters (mass, thrust coefficient) during training and outputs a penultimate-layer feature vector at deployment."
+    },
+    "file:src/sousvide/control/networks/svnet.py": {
+      "name": "svnet.py",
+      "type": "file",
+      "summary": "Defines SVNet, the original SousVide command network combining a SqueezeNet image backbone with two MLP branches over state and history features, concatenated to produce a control command."
+    },
+    "file:src/sousvide/control/policy.py": {
+      "name": "policy.py",
+      "type": "file",
+      "summary": "Defines Policy, the top-level learned control policy module that assembles and chains multiple sub-networks (e.g. featNet, commNet) generated via network_factory into a single forward pass producing the flight command output."
+    },
+    "file:src/sousvide/flight/flight_helper.py": {
+      "name": "flight_helper.py",
+      "type": "file",
+      "summary": "Computes per-flight performance metrics (tracking error and post-processing inference time statistics) from recorded trajectory rollouts, used to evaluate deployed policies."
+    },
+    "file:src/sousvide/visualize/plot_3D.py": {
+      "name": "plot_3D.py",
+      "type": "file",
+      "summary": "Provides 3D matplotlib plotting utilities for visualizing drone flight trajectories, waypoints, and quadrotor pose frames."
+    },
+    "file:src/sousvide/visualize/plot_learning.py": {
+      "name": "plot_learning.py",
+      "type": "file",
+      "summary": "Plots training loss curves for student policy networks and visualizes deployment flight results, combining rich console summaries with matplotlib figures."
+    },
+    "file:src/sousvide/visualize/plot_synthesize.py": {
+      "name": "plot_synthesize.py",
+      "type": "file",
+      "summary": "Visualizes synthesized rollout datasets for a training cohort, sampling and rendering 3D trajectories and time-domain plots alongside dataset descriptions."
+    },
+    "file:src/sousvide/visualize/plot_time.py": {
+      "name": "plot_time.py",
+      "type": "file",
+      "summary": "Provides time-series matplotlib plotting utilities for visualizing state and control trajectories over the flight horizon."
+    },
+    "file:src/sousvide/visualize/plot_utilities.py": {
+      "name": "plot_utilities.py",
+      "type": "file",
+      "summary": "Shared helper functions for the visualization module, computing plot axis limits and drawing quadrotor body-frame geometry for 3D plots."
+    },
+    "file:src/sousvide/visualize/rich_utilities.py": {
+      "name": "rich_utilities.py",
+      "type": "file",
+      "summary": "Rich-library console UI helpers shared across the project, providing progress bars for data generation and training, plus formatted tables and summaries for deployment and student training results."
+    },
+    "file:src/sousvide/flight/deploy_figs.py": {
+      "name": "deploy_figs.py",
+      "type": "file",
+      "summary": "Orchestrates roster-level closed-loop deployment of trained pilots in the FiGS simulator, generating trajectories, running the simulation loop for each configuration/course/pilot combination, computing flight metrics, and saving deployment results and videos."
+    },
+    "file:src/sousvide/synthesize/data_compress_helper.py": {
+      "name": "data_compress_helper.py",
+      "type": "file",
+      "summary": "Helper utilities to compress camera image stacks to JPEG bytes for compact storage and decompress them back into numpy arrays for training/analysis."
+    },
+    "file:src/sousvide/synthesize/rollout_generator.py": {
+      "name": "rollout_generator.py",
+      "type": "file",
+      "summary": "Generates synthetic rollout training data by simulating an expert (VehicleRateMPC) controller over perturbed frames and trajectory batches in FiGS, then saves the resulting trajectories and images (optionally compressed) for downstream policy training."
+    },
+    "file:src/sousvide/synthesize/synthesize_helper.py": {
+      "name": "synthesize_helper.py",
+      "type": "file",
+      "summary": "Collection of pure helper functions for synthetic data generation: randomized camera frame sampling, initial-state perturbations, batching of time-split points for rollouts, and patch-index/bounds computation for image cropping."
+    },
+    "file:src/sousvide/utilities/sousvide_utilities.py": {
+      "name": "sousvide_utilities.py",
+      "type": "file",
+      "summary": "Shared numerical utilities for computing frame body-rate parameters, relative state/rotation weights (Wrs) between simulated rollouts and the objective frame, and formatted flight-output (FOro) arrays used across deployment and rollout generation."
+    },
+    "file:src/sousvide/visualize/record_flight.py": {
+      "name": "record_flight.py",
+      "type": "file",
+      "summary": "Defines FlightRecorder, a class that records state, input, and camera image data at each simulation timestep during a flight, applies image preprocessing transforms, and saves the recorded flight data and rendered video to disk."
+    },
+    "file:src/sousvide/control/pilot.py": {
+      "name": "pilot.py",
+      "type": "file",
+      "summary": "Defines the Pilot class, a BaseController subclass implementing the OODA (Observe-Retain-Collate-Act, i.e. ORCA) loop that feeds sensor observations (state, RGB image, force/torque) through a Policy neural network to produce control commands for drone flight, while maintaining rolling history buffers for sequence models."
+    },
+    "file:src/sousvide/instruct/losses.py": {
+      "name": "losses.py",
+      "type": "file",
+      "summary": "Provides loss function utilities for training policy networks: entropy and load-balance regularizers for mixture-of-experts gating weights, and a LossFn class computing summed MSE loss across multiple prediction/label keys."
+    },
+    "file:src/sousvide/instruct/synthesized_data.py": {
+      "name": "synthesized_data.py",
+      "type": "file",
+      "summary": "Provides the ObservationData PyTorch Dataset wrapping synthesized observation tensors, plus helpers to load a dataset from a .pt file and to enumerate train/test observation data file paths for a given cohort, student, and topic."
+    },
+    "file:src/sousvide/instruct/train_policy.py": {
+      "name": "train_policy.py",
+      "type": "file",
+      "summary": "Orchestrates supervised training of student policy networks: regenerates observation data if requested, runs per-student training loops with checkpointing, periodic in-training flight evaluation via deploy_figs, best-checkpoint selection, and rich progress reporting."
+    },
+    "file:src/sousvide/synthesize/observation_generator.py": {
+      "name": "observation_generator.py",
+      "type": "file",
+      "summary": "Generates neural-network training observations by replaying recorded flight rollout and image data through a Pilot's ORCA control loop with randomized noise injection, then compresses and saves the resulting input/output tensors per pilot network to disk."
+    },
+    "document:README.md": {
+      "name": "README.md",
+      "type": "document",
+      "summary": "Top-level project readme for SousVide (Scene Understanding via Synthesized Visual Inertial Data from Experts), covering installation steps (submodules, ACADOS build, conda environment, GSplat download) and pointing users to the notebooks/ folder for FiGS and SousVide usage examples."
+    },
+    "config:environment_x86.yml": {
+      "name": "environment_x86.yml",
+      "type": "config",
+      "summary": "Conda environment specification (env name 'kitchen') pinning Python 3.10, PyTorch 2.1.2 with CUDA 11.8, and pip-installed research dependencies including nerfstudio, tiny-cuda-nn, and editable installs of the local FiGS and sousvide packages."
+    },
+    "config:pyproject.toml": {
+      "name": "pyproject.toml",
+      "type": "config",
+      "summary": "Python packaging configuration (setuptools build-backend) defining the 'sousvide' package, version 0.1.0, requiring Python >=3.10 with core scientific/ML dependencies (numpy, scipy, qpsolvers, albumentations, torch, torchvision, nerfstudio), and locating packages under src/."
+    },
+    "config:configs/captures/default.json": {
+      "name": "default.json",
+      "type": "config",
+      "summary": "Default capture configuration template with no camera intrinsics set, specifying image extraction settings (300 images, 20 marked, ArUco marker length/id) used as a fallback when generating training data from real-world video captures for GSplat reconstruction."
+    },
+    "config:configs/captures/iphone15pro.json": {
+      "name": "iphone15pro.json",
+      "type": "config",
+      "summary": "Capture device configuration for an iPhone 15 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data."
+    },
+    "config:configs/captures/pixel8pro.json": {
+      "name": "pixel8pro.json",
+      "type": "config",
+      "summary": "Capture device configuration for a Google Pixel 8 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data."
+    },
+    "config:configs/courses/button_prod.json": {
+      "name": "button_prod.json",
+      "type": "config",
+      "summary": "Drone flight course definition for a short 'button' production trajectory, specifying 3 timed keyframes of flat-output states (position, yaw, and derivatives) over about 4 seconds with no external force profile."
+    },
+    "config:configs/courses/circuit.json": {
+      "name": "circuit.json",
+      "type": "config",
+      "summary": "Drone flight course definition for a 'circuit' loop trajectory, specifying 10 timed keyframes of flat-output states spanning roughly 12 seconds with no external force profile."
+    },
+    "config:configs/courses/infinity.json": {
+      "name": "infinity.json",
+      "type": "config",
+      "summary": "Drone flight course definition for a figure-eight ('infinity') trajectory, specifying 7 timed keyframes of flat-output states spanning roughly 12 seconds with no external force profile."
+    },
+    "config:configs/courses/traverse.json": {
+      "name": "traverse.json",
+      "type": "config",
+      "summary": "Drone flight course definition for a 'traverse' trajectory, specifying 6 timed keyframes of flat-output states spanning roughly 14 seconds with no external force profile."
+    },
+    "config:configs/methods/data_alpha.json": {
+      "name": "data_alpha.json",
+      "type": "config",
+      "summary": "Lightweight data-generation method config for the synthesize pipeline: 3 short (2s) rollouts at 3Hz under mild domain randomization, with no injected model or sensor noise. Represents the smallest/fastest tier of a data-generation series (alpha/beta/gamma) likely used for quick smoke-testing of trajectory synthesis."
+    },
+    "config:configs/methods/data_beta.json": {
+      "name": "data_beta.json",
+      "type": "config",
+      "summary": "Medium-scale data-generation method config: 10 rollouts of 2s duration at 10Hz under the same domain-randomization ranges as data_alpha, with no injected noise. The middle tier of the alpha/beta/gamma data-generation progression."
+    },
+    "config:configs/methods/data_gamma.json": {
+      "name": "data_gamma.json",
+      "type": "config",
+      "summary": "Largest-scale data-generation method config: 20 rollouts of 3s duration at 10Hz with the same domain-randomization ranges as alpha/beta, producing the most extensive training dataset in the alpha/beta/gamma progression."
+    },
+    "config:configs/methods/eval_challenged.json": {
+      "name": "eval_challenged.json",
+      "type": "config",
+      "summary": "Evaluation method config for a 'challenged' scenario: 10 rollouts with wider initial-condition randomization than the nominal case plus injected sensor noise (large position/attitude std) and no model noise, used to stress-test a trained policy under perturbed starting conditions and noisy measurements."
+    },
+    "config:configs/methods/eval_extreme.json": {
+      "name": "eval_extreme.json",
+      "type": "config",
+      "summary": "Most demanding evaluation method config: combines wide initial-condition randomization with both model (process) noise and sensor noise at the largest magnitudes of the eval_* set, used to test worst-case policy robustness."
+    },
+    "config:configs/methods/eval_mocap.json": {
+      "name": "eval_mocap.json",
+      "type": "config",
+      "summary": "Evaluation method config modeling realistic motion-capture sensor noise: 10 rollouts with wide initial-condition randomization and small, hardware-realistic sensor noise standard deviations (no model noise), used to evaluate a policy under conditions approximating a real mocap-equipped test rig."
+    },
+    "config:configs/methods/eval_nominal.json": {
+      "name": "eval_nominal.json",
+      "type": "config",
+      "summary": "Baseline evaluation method config: 10 rollouts under the same mild domain-randomization ranges used for data generation, with no injected model or sensor noise, serving as the nominal/clean-condition benchmark against which challenged, extreme, and mocap evaluations are compared."
+    },
+    "config:configs/methods/eval_single.json": {
+      "name": "eval_single.json",
+      "type": "config",
+      "summary": "Minimal evaluation method config for a single deterministic rollout: randomization ranges and initial-condition perturbation are zeroed out and no noise is injected, used for debugging or visualizing one clean trajectory rather than statistical evaluation."
+    },
+    "config:configs/nnio/basic.json": {
+      "name": "basic.json",
+      "type": "config",
+      "summary": "Defines the field-name schema for the 'basic' neural network I/O modality, listing named channels for vehicle state (current pose/velocity/orientation), control command, physical parameters, wrench, resultant force/torque, and placeholder slots for feature vectors and class tokens."
+    },
+    "config:configs/nnio/image.json": {
+      "name": "image.json",
+      "type": "config",
+      "summary": "Defines the field-name schema for the 'image' neural network I/O modality, specifying spatial (null) dimensions plus named channel labels for rgb_image, depth_image, feature_array, and patches tensors."
+    },
+    "config:configs/nnio/sequence.json": {
+      "name": "sequence.json",
+      "type": "config",
+      "summary": "Defines the field-name schema for the 'sequence' neural network I/O modality, describing time-series inputs/outputs such as dynamics (dt, pose, velocity, orientation, thrust/torque command), wrenches, feature_arrays, and fo_horizon (flat-output horizon) trajectories."
+    },
+    "config:configs/pilots/Iceman.json": {
+      "name": "Iceman.json",
+      "type": "config",
+      "summary": "Pilot configuration for the 'Iceman' learned flight policy: defines a two-stage network architecture (a SIFU-style histNet that predicts dynamics parameters from state history, feeding an SVNet-style commNet that maps RGB images plus quaternion state to body-rate/thrust commands) running at 20 Hz, plus additive data-augmentation noise settings for training."
+    },
+    "config:configs/pilots/Jester.json": {
+      "name": "Jester.json",
+      "type": "config",
+      "summary": "Pilot configuration for the classical 'Jester' MPC-based policy, specifying trajectory planning (time-cost weight kT) and a 20 Hz tracking controller with state/input cost weights (Qk, Rk, QN), slack weights (Ws), and input bounds — no neural network is used."
+    },
+    "config:configs/pilots/Maverick.json": {
+      "name": "Maverick.json",
+      "type": "config",
+      "summary": "Pilot configuration for the 'Maverick' learned flight policy, extending the Iceman-style histNet/commNet architecture with additional altitude and velocity terms (pz, vx, vy, vz) in the dynamics and vision-conditioning inputs, running at 20 Hz with the same additive data-augmentation settings."
+    },
+    "config:configs/pilots/Rooster.json": {
+      "name": "Rooster.json",
+      "type": "config",
+      "summary": "Pilot configuration for the 'Rooster' learned flight policy: pairs a SIFU histNet dynamics estimator with a DINO-based vision feature extractor (featNet) and a plain dnnet command head (commNet) that consumes DINO patch/class-token features plus the estimated feature vector to produce flight commands."
+    },
+    "config:configs/pilots/Viper.json": {
+      "name": "Viper.json",
+      "type": "config",
+      "summary": "Pilot configuration for the classical 'Viper' MPC-based policy, mirroring Jester.json's plan/track structure with slightly different orientation cost weights (Qk) for the 20 Hz tracking controller."
+    },
+    "file:.gitmodules": {
+      "name": ".gitmodules",
+      "type": "file",
+      "summary": "Git submodule manifest that registers the external FiGS simulator repository (github.com/StanfordMSL/FiGS.git) as a submodule of the SousVide project."
+    },
+    "file:.ua/.understandignore": {
+      "name": ".understandignore",
+      "type": "file",
+      "summary": "Ignore-pattern configuration for the Understand-Anything analysis tool, listing gitignore-style globs (build artifacts, generated code, test data, pretrained models) that can be excluded from codebase scanning."
+    },
+    "config:configs/frames/carl.json": {
+      "name": "carl.json",
+      "type": "config",
+      "summary": "Drone frame configuration defining the 'carl' vehicle's physical parameters (mass, inertia, rotor arm lengths, motor coefficients) and onboard camera intrinsics/extrinsics used by the FiGS simulator and flight stack."
+    },
+    "file:docs/index.html": {
+      "name": "index.html",
+      "type": "file",
+      "summary": "Static project landing page for the SOUS VIDE paper, presenting the abstract, FiGS/SV-Net figures, deployment videos, and BibTeX citation, built on the Bulma CSS framework."
+    },
+    "document:docs/static/css/bulma.css.map.txt": {
+      "name": "bulma.css.map.txt",
+      "type": "document",
+      "summary": "Empty placeholder text file accompanying the vendored Bulma CSS source map, containing no analyzable content."
+    },
+    "file:docs/static/css/index.css": {
+      "name": "index.css",
+      "type": "file",
+      "summary": "Custom stylesheet for the SOUS VIDE project page overriding Bulma defaults for typography, the publication header, video embeds, the results carousel, and the interpolation image slider panel."
+    },
+    "file:docs/static/js/bulma-carousel.js": {
+      "name": "bulma-carousel.js",
+      "type": "file",
+      "summary": "Vendored, webpack-bundled third-party Bulma Carousel library providing the carousel/slideshow widget used to display result videos on the project landing page."
+    },
+    "file:docs/static/js/bulma-slider.js": {
+      "name": "bulma-slider.js",
+      "type": "file",
+      "summary": "Vendored, webpack-bundled third-party Bulma Slider library providing the range-slider widget used for the interpolation image viewer on the project page."
+    },
+    "file:docs/static/js/index.js": {
+      "name": "index.js",
+      "type": "file",
+      "summary": "Page-specific script for the project landing page that wires up the navbar burger menu, initializes the Bulma carousel and slider widgets, and preloads/animates the interpolation image sequence."
+    },
+    "file:notebooks/figs_examples.ipynb": {
+      "name": "figs_examples.ipynb",
+      "type": "file",
+      "summary": "Example Jupyter notebook demonstrating the FiGS workflow: generating a Gaussian Splat environment from a video capture, running an MPC-expert-controlled drone trajectory through the simulator, and rendering the onboard camera view to video."
+    },
+    "file:notebooks/sous_vide_examples.ipynb": {
+      "name": "sous_vide_examples.ipynb",
+      "type": "file",
+      "summary": "Example Jupyter notebook walking through the full SOUS VIDE pipeline: generating rollout and observation data, training the histNet and commNet policy networks, and evaluating the trained policy in the FiGS simulator."
+    },
+    "file:src/sousvide/flight/command_helper.py": {
+      "name": "command_helper.py",
+      "type": "file",
+      "summary": "Low-level flight helper module providing RealSense camera setup/capture, drone state/command coordinate transforms, and MAVSDK/PX4 offboard-control message publishing functions used to fly the real drone."
+    }
+  },
+  "totalNodes": 65,
+  "totalEdges": 84
+}

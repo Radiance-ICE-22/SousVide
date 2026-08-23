@@ -1,0 +1,253 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitmodules",
+      "type": "file",
+      "name": ".gitmodules",
+      "filePath": ".gitmodules",
+      "summary": "Git submodule manifest that registers the external FiGS simulator repository (github.com/StanfordMSL/FiGS.git) as a submodule of the SousVide project.",
+      "tags": ["configuration", "submodule", "dependency-management", "git"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".ua/.understandignore",
+      "summary": "Ignore-pattern configuration for the Understand-Anything analysis tool, listing gitignore-style globs (build artifacts, generated code, test data, pretrained models) that can be excluded from codebase scanning.",
+      "tags": ["configuration", "tooling", "ignore-patterns"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:configs/frames/carl.json",
+      "type": "config",
+      "name": "carl.json",
+      "filePath": "configs/frames/carl.json",
+      "summary": "Drone frame configuration defining the 'carl' vehicle's physical parameters (mass, inertia, rotor arm lengths, motor coefficients) and onboard camera intrinsics/extrinsics used by the FiGS simulator and flight stack.",
+      "tags": ["configuration", "drone-parameters", "camera-calibration", "simulation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "docs/index.html",
+      "summary": "Static project landing page for the SOUS VIDE paper, presenting the abstract, FiGS/SV-Net figures, deployment videos, and BibTeX citation, built on the Bulma CSS framework.",
+      "tags": ["landing-page", "documentation", "project-website", "markup"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/static/css/bulma.css.map.txt",
+      "type": "document",
+      "name": "bulma.css.map.txt",
+      "filePath": "docs/static/css/bulma.css.map.txt",
+      "summary": "Empty placeholder text file accompanying the vendored Bulma CSS source map, containing no analyzable content.",
+      "tags": ["vendored", "css", "placeholder"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/static/css/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "docs/static/css/index.css",
+      "summary": "Custom stylesheet for the SOUS VIDE project page overriding Bulma defaults for typography, the publication header, video embeds, the results carousel, and the interpolation image slider panel.",
+      "tags": ["styling", "css", "project-website"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/static/js/bulma-carousel.js",
+      "type": "file",
+      "name": "bulma-carousel.js",
+      "filePath": "docs/static/js/bulma-carousel.js",
+      "summary": "Vendored, webpack-bundled third-party Bulma Carousel library providing the carousel/slideshow widget used to display result videos on the project landing page.",
+      "tags": ["vendored", "third-party", "carousel", "ui-widget"],
+      "complexity": "complex",
+      "languageNotes": "Babel/webpack-transpiled UMD bundle with ES5 class-emulation helpers (_classCallCheck, _inherits, _possibleConstructorReturn); not project-authored code."
+    },
+    {
+      "id": "file:docs/static/js/bulma-slider.js",
+      "type": "file",
+      "name": "bulma-slider.js",
+      "filePath": "docs/static/js/bulma-slider.js",
+      "summary": "Vendored, webpack-bundled third-party Bulma Slider library providing the range-slider widget used for the interpolation image viewer on the project page.",
+      "tags": ["vendored", "third-party", "slider", "ui-widget"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:docs/static/js/index.js",
+      "type": "file",
+      "name": "index.js",
+      "filePath": "docs/static/js/index.js",
+      "summary": "Page-specific script for the project landing page that wires up the navbar burger menu, initializes the Bulma carousel and slider widgets, and preloads/animates the interpolation image sequence.",
+      "tags": ["ui-behavior", "carousel", "javascript", "project-website"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:notebooks/figs_examples.ipynb",
+      "type": "file",
+      "name": "figs_examples.ipynb",
+      "filePath": "notebooks/figs_examples.ipynb",
+      "summary": "Example Jupyter notebook demonstrating the FiGS workflow: generating a Gaussian Splat environment from a video capture, running an MPC-expert-controlled drone trajectory through the simulator, and rendering the onboard camera view to video.",
+      "tags": ["notebook", "example", "simulation", "figs", "tutorial"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:notebooks/sous_vide_examples.ipynb",
+      "type": "file",
+      "name": "sous_vide_examples.ipynb",
+      "filePath": "notebooks/sous_vide_examples.ipynb",
+      "summary": "Example Jupyter notebook walking through the full SOUS VIDE pipeline: generating rollout and observation data, training the histNet and commNet policy networks, and evaluating the trained policy in the FiGS simulator.",
+      "tags": ["notebook", "example", "training-pipeline", "policy-learning", "tutorial"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/sousvide/flight/command_helper.py",
+      "type": "file",
+      "name": "command_helper.py",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "summary": "Low-level flight helper module providing RealSense camera setup/capture, drone state/command coordinate transforms, and MAVSDK/PX4 offboard-control message publishing functions used to fly the real drone.",
+      "tags": ["hardware-control", "drone-flight", "camera", "mavsdk", "utility"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:get_camera",
+      "type": "function",
+      "name": "get_camera",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [17, 48],
+      "summary": "Configures and starts a RealSense camera pipeline at the requested resolution/frame rate, enabling color and depth streams and disabling auto-exposure/white-balance for consistent onboard image capture.",
+      "tags": ["camera-setup", "realsense", "hardware", "initialization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:get_image",
+      "type": "function",
+      "name": "get_image",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [50, 67],
+      "summary": "Waits for a frame set from the camera pipeline and returns the color and depth images as numpy arrays, falling back to blank frames if no frame is available.",
+      "tags": ["camera", "image-capture", "numpy"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:close_camera",
+      "type": "function",
+      "name": "close_camera",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [69, 71],
+      "summary": "Stops the given RealSense camera pipeline, releasing camera resources.",
+      "tags": ["camera", "cleanup", "hardware"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:vo2x",
+      "type": "function",
+      "name": "vo2x",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [73, 88],
+      "summary": "Transforms a raw visual-odometry state estimate into the drone's state vector via a coordinate frame transform and normalizes the orientation quaternion.",
+      "tags": ["state-estimation", "coordinate-transform", "visual-odometry"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:x_transform",
+      "type": "function",
+      "name": "x_transform",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [90, 103],
+      "summary": "Applies a rigid-body coordinate frame transform to a state vector, rotating position, velocity, and orientation quaternion from one reference frame to another.",
+      "tags": ["coordinate-transform", "math", "state-estimation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:am2unf",
+      "type": "function",
+      "name": "am2unf",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [105, 107],
+      "summary": "Converts a raw accelerometer/motor measurement array into the unit-normalized force representation used by the flight controller.",
+      "tags": ["sensor-processing", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:vrs2uvr",
+      "type": "function",
+      "name": "vrs2uvr",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [109, 111],
+      "summary": "Converts a vehicle-rate-setpoint array into the normalized unit vehicle-rate command representation.",
+      "tags": ["command-conversion", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:publish_uvr_command",
+      "type": "function",
+      "name": "publish_uvr_command",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [113, 126],
+      "summary": "Builds and publishes a VehicleRatesSetpoint message carrying body-rate and thrust commands to the flight controller over the vehicle-rate-setpoint publisher.",
+      "tags": ["mavsdk", "publisher", "flight-command"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:engage_offboard_control_mode",
+      "type": "function",
+      "name": "engage_offboard_control_mode",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [128, 139],
+      "summary": "Publishes a VehicleCommand message that switches the flight controller into PX4 offboard control mode.",
+      "tags": ["mavsdk", "offboard-control", "flight-command"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:land",
+      "type": "function",
+      "name": "land",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [141, 152],
+      "summary": "Publishes a VehicleCommand message that commands the drone to land.",
+      "tags": ["mavsdk", "flight-command", "landing"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/sousvide/flight/command_helper.py:heartbeat_offboard_control_mode",
+      "type": "function",
+      "name": "heartbeat_offboard_control_mode",
+      "filePath": "src/sousvide/flight/command_helper.py",
+      "lineRange": [154, 163],
+      "summary": "Publishes a periodic OffboardControlMode heartbeat message required by PX4 to keep offboard body-rate control active.",
+      "tags": ["mavsdk", "heartbeat", "offboard-control"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:get_camera", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:get_image", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:close_camera", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:vo2x", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:x_transform", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:am2unf", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:vrs2uvr", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:publish_uvr_command", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:engage_offboard_control_mode", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:land", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:heartbeat_offboard_control_mode", "type": "contains", "direction": "forward", "weight": 1.0},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:get_camera", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:get_image", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:close_camera", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:vo2x", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:x_transform", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:am2unf", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:vrs2uvr", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:publish_uvr_command", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:engage_offboard_control_mode", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:land", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:src/sousvide/flight/command_helper.py", "target": "function:src/sousvide/flight/command_helper.py:heartbeat_offboard_control_mode", "type": "exports", "direction": "forward", "weight": 0.8},
+    {"source": "file:docs/index.html", "target": "file:docs/static/css/index.css", "type": "depends_on", "direction": "forward", "weight": 0.6},
+    {"source": "file:docs/index.html", "target": "file:docs/static/js/index.js", "type": "depends_on", "direction": "forward", "weight": 0.6},
+    {"source": "file:docs/static/js/index.js", "target": "file:docs/static/js/bulma-carousel.js", "type": "depends_on", "direction": "forward", "weight": 0.6},
+    {"source": "file:docs/static/js/index.js", "target": "file:docs/static/js/bulma-slider.js", "type": "depends_on", "direction": "forward", "weight": 0.6},
+    {"source": "config:configs/frames/carl.json", "target": "file:src/sousvide/flight/command_helper.py", "type": "configures", "direction": "forward", "weight": 0.6},
+    {"source": "config:configs/frames/carl.json", "target": "file:notebooks/figs_examples.ipynb", "type": "configures", "direction": "forward", "weight": 0.6}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "batchFiles": [
+    {"path": "configs/courses/button_prod.json", "language": "json", "sizeLines": 34, "fileCategory": "config"},
+    {"path": "configs/courses/circuit.json", "language": "json", "sizeLines": 97, "fileCategory": "config"},
+    {"path": "configs/courses/infinity.json", "language": "json", "sizeLines": 70, "fileCategory": "config"},
+    {"path": "configs/courses/traverse.json", "language": "json", "sizeLines": 61, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    "configs/courses/button_prod.json": [],
+    "configs/courses/circuit.json": [],
+    "configs/courses/infinity.json": [],
+    "configs/courses/traverse.json": []
+  }
+}

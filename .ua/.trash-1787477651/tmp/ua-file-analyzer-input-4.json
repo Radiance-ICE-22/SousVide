@@ -1,0 +1,17 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "batchFiles": [
+    {"path": "src/sousvide/control/pilot.py", "language": "python", "sizeLines": 395, "fileCategory": "code"},
+    {"path": "src/sousvide/instruct/losses.py", "language": "python", "sizeLines": 21, "fileCategory": "code"},
+    {"path": "src/sousvide/instruct/synthesized_data.py", "language": "python", "sizeLines": 121, "fileCategory": "code"},
+    {"path": "src/sousvide/instruct/train_policy.py", "language": "python", "sizeLines": 269, "fileCategory": "code"},
+    {"path": "src/sousvide/synthesize/observation_generator.py", "language": "python", "sizeLines": 273, "fileCategory": "code"}
+  ],
+  "batchImportData": {
+    "src/sousvide/control/pilot.py": ["src/sousvide/control/policy.py"],
+    "src/sousvide/instruct/losses.py": [],
+    "src/sousvide/instruct/synthesized_data.py": [],
+    "src/sousvide/instruct/train_policy.py": ["src/sousvide/control/networks/base_net.py","src/sousvide/control/pilot.py","src/sousvide/control/policy.py","src/sousvide/flight/deploy_figs.py","src/sousvide/instruct/losses.py","src/sousvide/instruct/synthesized_data.py","src/sousvide/synthesize/observation_generator.py","src/sousvide/visualize/rich_utilities.py"],
+    "src/sousvide/synthesize/observation_generator.py": ["src/sousvide/control/network_helper.py","src/sousvide/control/pilot.py","src/sousvide/synthesize/data_compress_helper.py","src/sousvide/visualize/rich_utilities.py"]
+  }
+}

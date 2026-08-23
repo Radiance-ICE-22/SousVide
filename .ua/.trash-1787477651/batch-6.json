@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "config:configs/captures/default.json",
+      "type": "config",
+      "name": "default.json",
+      "filePath": "configs/captures/default.json",
+      "summary": "Default capture configuration template with no camera intrinsics set, specifying image extraction settings (300 images, 20 marked, ArUco marker length/id) used as a fallback when generating training data from real-world video captures for GSplat reconstruction.",
+      "tags": ["configuration", "capture-device", "camera-calibration", "template"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:configs/captures/iphone15pro.json",
+      "type": "config",
+      "name": "iphone15pro.json",
+      "filePath": "configs/captures/iphone15pro.json",
+      "summary": "Capture device configuration for an iPhone 15 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data.",
+      "tags": ["configuration", "capture-device", "camera-calibration", "camera-intrinsics"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:configs/captures/pixel8pro.json",
+      "type": "config",
+      "name": "pixel8pro.json",
+      "filePath": "configs/captures/pixel8pro.json",
+      "summary": "Capture device configuration for a Google Pixel 8 Pro, providing OpenCV camera intrinsics (focal lengths, principal point, distortion coefficients) at 1920x1080 resolution plus the same image-extraction settings as the default profile, used when processing device-recorded video into GSplat training data.",
+      "tags": ["configuration", "capture-device", "camera-calibration", "camera-intrinsics"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:configs/captures/iphone15pro.json",
+      "target": "config:configs/captures/default.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:configs/captures/pixel8pro.json",
+      "target": "config:configs/captures/default.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "files": [
+    {
+      "path": ".gitmodules",
+      "language": "unknown",
+      "fileCategory": "code"
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "configs/captures/default.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/captures/iphone15pro.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/captures/pixel8pro.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/courses/button_prod.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/courses/circuit.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/courses/infinity.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/courses/traverse.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/frames/carl.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/data_alpha.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/data_beta.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/data_gamma.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/eval_challenged.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/eval_extreme.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/eval_mocap.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/eval_nominal.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/methods/eval_single.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/nnio/basic.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/nnio/image.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/nnio/sequence.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/pilots/Iceman.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/pilots/Jester.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/pilots/Maverick.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/pilots/Rooster.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "configs/pilots/Viper.json",
+      "language": "json",
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/index.html",
+      "language": "html",
+      "fileCategory": "markup"
+    },
+    {
+      "path": "docs/static/css/bulma.css.map.txt",
+      "language": "txt",
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/static/css/index.css",
+      "language": "css",
+      "fileCategory": "markup"
+    },
+    {
+      "path": "docs/static/js/bulma-carousel.js",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/static/js/bulma-slider.js",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "docs/static/js/index.js",
+      "language": "javascript",
+      "fileCategory": "code"
+    },
+    {
+      "path": "environment_x86.yml",
+      "language": "yaml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "notebooks/figs_examples.ipynb",
+      "language": "ipynb",
+      "fileCategory": "code"
+    },
+    {
+      "path": "notebooks/sous_vide_examples.ipynb",
+      "language": "ipynb",
+      "fileCategory": "code"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/sousvide/control/network_factory.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/network_helper.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/base_net.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/dnnet.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/feature_extractors.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/pave.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/sifu.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/networks/svnet.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/pilot.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/control/policy.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/flight/command_helper.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/flight/deploy_figs.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/flight/flight_helper.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/instruct/losses.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/instruct/synthesized_data.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/instruct/train_policy.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/synthesize/data_compress_helper.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/synthesize/observation_generator.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/synthesize/rollout_generator.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/synthesize/synthesize_helper.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/utilities/sousvide_utilities.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/plot_3D.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/plot_learning.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/plot_synthesize.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/plot_time.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/plot_utilities.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/record_flight.py",
+      "language": "python",
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/sousvide/visualize/rich_utilities.py",
+      "language": "python",
+      "fileCategory": "code"
+    }
+  ]
+}

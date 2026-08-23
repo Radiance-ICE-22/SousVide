@@ -1,0 +1,1014 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 65,
+  "totalBatches": 11,
+  "exportsByPath": {
+    ".gitmodules": [],
+    ".ua/.understandignore": [],
+    "docs/static/js/bulma-carousel.js": [],
+    "docs/static/js/bulma-slider.js": [],
+    "docs/static/js/index.js": [],
+    "notebooks/figs_examples.ipynb": [],
+    "notebooks/sous_vide_examples.ipynb": [],
+    "src/sousvide/control/network_factory.py": [
+      "generate_network"
+    ],
+    "src/sousvide/control/network_helper.py": [
+      "get_max_length",
+      "get_io_refr",
+      "get_io_dims",
+      "get_io_sizes",
+      "get_io_idxs",
+      "extract_io",
+      "generate_positional_encoding"
+    ],
+    "src/sousvide/control/networks/base_net.py": [
+      "BaseNet"
+    ],
+    "src/sousvide/control/networks/dnnet.py": [
+      "DNNet"
+    ],
+    "src/sousvide/control/networks/feature_extractors.py": [
+      "VitB16",
+      "DINO"
+    ],
+    "src/sousvide/control/networks/pave.py": [
+      "Pave"
+    ],
+    "src/sousvide/control/networks/sifu.py": [
+      "SIFU"
+    ],
+    "src/sousvide/control/networks/svnet.py": [
+      "SVNet"
+    ],
+    "src/sousvide/control/pilot.py": [
+      "Pilot"
+    ],
+    "src/sousvide/control/policy.py": [
+      "Policy"
+    ],
+    "src/sousvide/flight/command_helper.py": [
+      "get_camera",
+      "get_image",
+      "close_camera",
+      "vo2x",
+      "x_transform",
+      "am2unf",
+      "vrs2uvr",
+      "publish_uvr_command",
+      "engage_offboard_control_mode",
+      "land",
+      "heartbeat_offboard_control_mode"
+    ],
+    "src/sousvide/flight/deploy_figs.py": [
+      "deploy_roster",
+      "save_deployments"
+    ],
+    "src/sousvide/flight/flight_helper.py": [
+      "compute_flight_metrics"
+    ],
+    "src/sousvide/instruct/losses.py": [
+      "loss_entropy",
+      "loss_load_balance",
+      "LossFn"
+    ],
+    "src/sousvide/instruct/synthesized_data.py": [
+      "ObservationData",
+      "squeeze_data",
+      "generate_dataset",
+      "get_data_paths"
+    ],
+    "src/sousvide/instruct/train_policy.py": [
+      "train_roster",
+      "train_student",
+      "get_network"
+    ],
+    "src/sousvide/synthesize/data_compress_helper.py": [
+      "decompress_data",
+      "compress_data"
+    ],
+    "src/sousvide/synthesize/observation_generator.py": [
+      "generate_observation_data",
+      "generate_observations",
+      "save_observations"
+    ],
+    "src/sousvide/synthesize/rollout_generator.py": [
+      "generate_rollout_data",
+      "generate_rollouts",
+      "save_rollouts"
+    ],
+    "src/sousvide/synthesize/synthesize_helper.py": [
+      "generate_frames",
+      "generate_perturbations",
+      "compute_Tsp_batches",
+      "get_patch_index",
+      "get_patch_bounds"
+    ],
+    "src/sousvide/utilities/sousvide_utilities.py": [
+      "compute_prms",
+      "compute_Wrs",
+      "compute_FOro"
+    ],
+    "src/sousvide/visualize/plot_3D.py": [
+      "tXU_to_3D",
+      "RO_to_3D"
+    ],
+    "src/sousvide/visualize/plot_learning.py": [
+      "plot_losses",
+      "plot_deployments"
+    ],
+    "src/sousvide/visualize/plot_synthesize.py": [
+      "plot_rollout_data"
+    ],
+    "src/sousvide/visualize/plot_time.py": [
+      "tXU_to_time",
+      "RO_to_time"
+    ],
+    "src/sousvide/visualize/plot_utilities.py": [
+      "get_plot_limits",
+      "quad_frame"
+    ],
+    "src/sousvide/visualize/record_flight.py": [
+      "FlightRecorder"
+    ],
+    "src/sousvide/visualize/rich_utilities.py": [
+      "get_generation_progress",
+      "get_training_progress",
+      "get_data_description",
+      "get_deployment_table",
+      "update_deployment_table",
+      "get_student_summary"
+    ]
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "src/sousvide/control/network_factory.py",
+          "language": "python",
+          "sizeLines": 64,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/network_helper.py",
+          "language": "python",
+          "sizeLines": 206,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/base_net.py",
+          "language": "python",
+          "sizeLines": 113,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/dnnet.py",
+          "language": "python",
+          "sizeLines": 84,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/feature_extractors.py",
+          "language": "python",
+          "sizeLines": 71,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/pave.py",
+          "language": "python",
+          "sizeLines": 106,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/sifu.py",
+          "language": "python",
+          "sizeLines": 70,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/networks/svnet.py",
+          "language": "python",
+          "sizeLines": 95,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/control/policy.py",
+          "language": "python",
+          "sizeLines": 90,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/sousvide/control/network_factory.py": [
+          "src/sousvide/control/network_helper.py",
+          "src/sousvide/control/networks/base_net.py",
+          "src/sousvide/control/networks/dnnet.py",
+          "src/sousvide/control/networks/feature_extractors.py",
+          "src/sousvide/control/networks/pave.py",
+          "src/sousvide/control/networks/sifu.py",
+          "src/sousvide/control/networks/svnet.py"
+        ],
+        "src/sousvide/control/network_helper.py": [],
+        "src/sousvide/control/networks/base_net.py": [
+          "src/sousvide/control/network_helper.py"
+        ],
+        "src/sousvide/control/networks/dnnet.py": [
+          "src/sousvide/control/networks/base_net.py"
+        ],
+        "src/sousvide/control/networks/feature_extractors.py": [
+          "src/sousvide/control/networks/base_net.py"
+        ],
+        "src/sousvide/control/networks/pave.py": [
+          "src/sousvide/control/networks/base_net.py"
+        ],
+        "src/sousvide/control/networks/sifu.py": [
+          "src/sousvide/control/networks/base_net.py"
+        ],
+        "src/sousvide/control/networks/svnet.py": [
+          "src/sousvide/control/networks/base_net.py"
+        ],
+        "src/sousvide/control/policy.py": [
+          "src/sousvide/control/network_factory.py",
+          "src/sousvide/control/network_helper.py",
+          "src/sousvide/control/networks/base_net.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ]
+      },
+      "neighborMap": {
+        "src/sousvide/control/network_helper.py": [
+          {
+            "path": "src/sousvide/synthesize/observation_generator.py",
+            "batchIndex": 4,
+            "symbols": [
+              "generate_observation_data",
+              "generate_observations",
+              "save_observations"
+            ]
+          }
+        ],
+        "src/sousvide/control/networks/base_net.py": [
+          {
+            "path": "src/sousvide/instruct/train_policy.py",
+            "batchIndex": 4,
+            "symbols": [
+              "train_roster",
+              "train_student",
+              "get_network"
+            ]
+          }
+        ],
+        "src/sousvide/control/policy.py": [
+          {
+            "path": "src/sousvide/visualize/rich_utilities.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_generation_progress",
+              "get_training_progress",
+              "get_data_description",
+              "get_deployment_table",
+              "update_deployment_table",
+              "get_student_summary"
+            ]
+          },
+          {
+            "path": "src/sousvide/control/pilot.py",
+            "batchIndex": 4,
+            "symbols": [
+              "Pilot"
+            ]
+          },
+          {
+            "path": "src/sousvide/instruct/train_policy.py",
+            "batchIndex": 4,
+            "symbols": [
+              "train_roster",
+              "train_student",
+              "get_network"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "src/sousvide/flight/flight_helper.py",
+          "language": "python",
+          "sizeLines": 53,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/plot_3D.py",
+          "language": "python",
+          "sizeLines": 83,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/plot_learning.py",
+          "language": "python",
+          "sizeLines": 182,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/plot_synthesize.py",
+          "language": "python",
+          "sizeLines": 78,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/plot_time.py",
+          "language": "python",
+          "sizeLines": 89,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/plot_utilities.py",
+          "language": "python",
+          "sizeLines": 60,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/rich_utilities.py",
+          "language": "python",
+          "sizeLines": 150,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/sousvide/flight/flight_helper.py": [],
+        "src/sousvide/visualize/plot_3D.py": [
+          "src/sousvide/visualize/plot_utilities.py"
+        ],
+        "src/sousvide/visualize/plot_learning.py": [
+          "src/sousvide/flight/flight_helper.py",
+          "src/sousvide/visualize/plot_3D.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ],
+        "src/sousvide/visualize/plot_synthesize.py": [
+          "src/sousvide/visualize/plot_3D.py",
+          "src/sousvide/visualize/plot_time.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ],
+        "src/sousvide/visualize/plot_time.py": [
+          "src/sousvide/visualize/plot_utilities.py"
+        ],
+        "src/sousvide/visualize/plot_utilities.py": [],
+        "src/sousvide/visualize/rich_utilities.py": []
+      },
+      "neighborMap": {
+        "src/sousvide/flight/flight_helper.py": [
+          {
+            "path": "src/sousvide/flight/deploy_figs.py",
+            "batchIndex": 3,
+            "symbols": [
+              "deploy_roster",
+              "save_deployments"
+            ]
+          }
+        ],
+        "src/sousvide/visualize/rich_utilities.py": [
+          {
+            "path": "src/sousvide/control/policy.py",
+            "batchIndex": 1,
+            "symbols": [
+              "Policy"
+            ]
+          },
+          {
+            "path": "src/sousvide/flight/deploy_figs.py",
+            "batchIndex": 3,
+            "symbols": [
+              "deploy_roster",
+              "save_deployments"
+            ]
+          },
+          {
+            "path": "src/sousvide/instruct/train_policy.py",
+            "batchIndex": 4,
+            "symbols": [
+              "train_roster",
+              "train_student",
+              "get_network"
+            ]
+          },
+          {
+            "path": "src/sousvide/synthesize/observation_generator.py",
+            "batchIndex": 4,
+            "symbols": [
+              "generate_observation_data",
+              "generate_observations",
+              "save_observations"
+            ]
+          },
+          {
+            "path": "src/sousvide/synthesize/rollout_generator.py",
+            "batchIndex": 3,
+            "symbols": [
+              "generate_rollout_data",
+              "generate_rollouts",
+              "save_rollouts"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "src/sousvide/flight/deploy_figs.py",
+          "language": "python",
+          "sizeLines": 215,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/synthesize/data_compress_helper.py",
+          "language": "python",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/synthesize/rollout_generator.py",
+          "language": "python",
+          "sizeLines": 292,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/synthesize/synthesize_helper.py",
+          "language": "python",
+          "sizeLines": 184,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/utilities/sousvide_utilities.py",
+          "language": "python",
+          "sizeLines": 103,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/visualize/record_flight.py",
+          "language": "python",
+          "sizeLines": 250,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/sousvide/flight/deploy_figs.py": [
+          "src/sousvide/control/pilot.py",
+          "src/sousvide/flight/flight_helper.py",
+          "src/sousvide/synthesize/synthesize_helper.py",
+          "src/sousvide/utilities/sousvide_utilities.py",
+          "src/sousvide/visualize/record_flight.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ],
+        "src/sousvide/synthesize/data_compress_helper.py": [],
+        "src/sousvide/synthesize/rollout_generator.py": [
+          "src/sousvide/synthesize/data_compress_helper.py",
+          "src/sousvide/synthesize/synthesize_helper.py",
+          "src/sousvide/utilities/sousvide_utilities.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ],
+        "src/sousvide/synthesize/synthesize_helper.py": [],
+        "src/sousvide/utilities/sousvide_utilities.py": [],
+        "src/sousvide/visualize/record_flight.py": []
+      },
+      "neighborMap": {
+        "src/sousvide/flight/deploy_figs.py": [
+          {
+            "path": "src/sousvide/control/pilot.py",
+            "batchIndex": 4,
+            "symbols": [
+              "Pilot"
+            ]
+          },
+          {
+            "path": "src/sousvide/flight/flight_helper.py",
+            "batchIndex": 2,
+            "symbols": [
+              "compute_flight_metrics"
+            ]
+          },
+          {
+            "path": "src/sousvide/visualize/rich_utilities.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_generation_progress",
+              "get_training_progress",
+              "get_data_description",
+              "get_deployment_table",
+              "update_deployment_table",
+              "get_student_summary"
+            ]
+          },
+          {
+            "path": "src/sousvide/instruct/train_policy.py",
+            "batchIndex": 4,
+            "symbols": [
+              "train_roster",
+              "train_student",
+              "get_network"
+            ]
+          }
+        ],
+        "src/sousvide/synthesize/data_compress_helper.py": [
+          {
+            "path": "src/sousvide/synthesize/observation_generator.py",
+            "batchIndex": 4,
+            "symbols": [
+              "generate_observation_data",
+              "generate_observations",
+              "save_observations"
+            ]
+          }
+        ],
+        "src/sousvide/synthesize/rollout_generator.py": [
+          {
+            "path": "src/sousvide/visualize/rich_utilities.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_generation_progress",
+              "get_training_progress",
+              "get_data_description",
+              "get_deployment_table",
+              "update_deployment_table",
+              "get_student_summary"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "src/sousvide/control/pilot.py",
+          "language": "python",
+          "sizeLines": 395,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/instruct/losses.py",
+          "language": "python",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/instruct/synthesized_data.py",
+          "language": "python",
+          "sizeLines": 121,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/instruct/train_policy.py",
+          "language": "python",
+          "sizeLines": 269,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/synthesize/observation_generator.py",
+          "language": "python",
+          "sizeLines": 273,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/sousvide/control/pilot.py": [
+          "src/sousvide/control/policy.py"
+        ],
+        "src/sousvide/instruct/losses.py": [],
+        "src/sousvide/instruct/synthesized_data.py": [],
+        "src/sousvide/instruct/train_policy.py": [
+          "src/sousvide/control/networks/base_net.py",
+          "src/sousvide/control/pilot.py",
+          "src/sousvide/control/policy.py",
+          "src/sousvide/flight/deploy_figs.py",
+          "src/sousvide/instruct/losses.py",
+          "src/sousvide/instruct/synthesized_data.py",
+          "src/sousvide/synthesize/observation_generator.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ],
+        "src/sousvide/synthesize/observation_generator.py": [
+          "src/sousvide/control/network_helper.py",
+          "src/sousvide/control/pilot.py",
+          "src/sousvide/synthesize/data_compress_helper.py",
+          "src/sousvide/visualize/rich_utilities.py"
+        ]
+      },
+      "neighborMap": {
+        "src/sousvide/control/pilot.py": [
+          {
+            "path": "src/sousvide/control/policy.py",
+            "batchIndex": 1,
+            "symbols": [
+              "Policy"
+            ]
+          },
+          {
+            "path": "src/sousvide/flight/deploy_figs.py",
+            "batchIndex": 3,
+            "symbols": [
+              "deploy_roster",
+              "save_deployments"
+            ]
+          }
+        ],
+        "src/sousvide/instruct/train_policy.py": [
+          {
+            "path": "src/sousvide/control/networks/base_net.py",
+            "batchIndex": 1,
+            "symbols": [
+              "BaseNet"
+            ]
+          },
+          {
+            "path": "src/sousvide/control/policy.py",
+            "batchIndex": 1,
+            "symbols": [
+              "Policy"
+            ]
+          },
+          {
+            "path": "src/sousvide/flight/deploy_figs.py",
+            "batchIndex": 3,
+            "symbols": [
+              "deploy_roster",
+              "save_deployments"
+            ]
+          },
+          {
+            "path": "src/sousvide/visualize/rich_utilities.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_generation_progress",
+              "get_training_progress",
+              "get_data_description",
+              "get_deployment_table",
+              "update_deployment_table",
+              "get_student_summary"
+            ]
+          }
+        ],
+        "src/sousvide/synthesize/observation_generator.py": [
+          {
+            "path": "src/sousvide/control/network_helper.py",
+            "batchIndex": 1,
+            "symbols": [
+              "get_max_length",
+              "get_io_refr",
+              "get_io_dims",
+              "get_io_sizes",
+              "get_io_idxs",
+              "extract_io",
+              "generate_positional_encoding"
+            ]
+          },
+          {
+            "path": "src/sousvide/synthesize/data_compress_helper.py",
+            "batchIndex": 3,
+            "symbols": [
+              "decompress_data",
+              "compress_data"
+            ]
+          },
+          {
+            "path": "src/sousvide/visualize/rich_utilities.py",
+            "batchIndex": 2,
+            "symbols": [
+              "get_generation_progress",
+              "get_training_progress",
+              "get_data_description",
+              "get_deployment_table",
+              "update_deployment_table",
+              "get_student_summary"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 48,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "environment_x86.yml",
+          "language": "yaml",
+          "sizeLines": 38,
+          "fileCategory": "config"
+        },
+        {
+          "path": "pyproject.toml",
+          "language": "toml",
+          "sizeLines": 30,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "README.md": [],
+        "environment_x86.yml": [],
+        "pyproject.toml": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "configs/captures/default.json",
+          "language": "json",
+          "sizeLines": 8,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/captures/iphone15pro.json",
+          "language": "json",
+          "sizeLines": 23,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/captures/pixel8pro.json",
+          "language": "json",
+          "sizeLines": 23,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "configs/captures/default.json": [],
+        "configs/captures/iphone15pro.json": [],
+        "configs/captures/pixel8pro.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 7,
+      "files": [
+        {
+          "path": "configs/courses/button_prod.json",
+          "language": "json",
+          "sizeLines": 34,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/courses/circuit.json",
+          "language": "json",
+          "sizeLines": 97,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/courses/infinity.json",
+          "language": "json",
+          "sizeLines": 70,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/courses/traverse.json",
+          "language": "json",
+          "sizeLines": 61,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "configs/courses/button_prod.json": [],
+        "configs/courses/circuit.json": [],
+        "configs/courses/infinity.json": [],
+        "configs/courses/traverse.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "configs/methods/data_alpha.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/data_beta.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/data_gamma.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/eval_challenged.json",
+          "language": "json",
+          "sizeLines": 33,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/eval_extreme.json",
+          "language": "json",
+          "sizeLines": 44,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/eval_mocap.json",
+          "language": "json",
+          "sizeLines": 33,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/eval_nominal.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/methods/eval_single.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "configs/methods/data_alpha.json": [],
+        "configs/methods/data_beta.json": [],
+        "configs/methods/data_gamma.json": [],
+        "configs/methods/eval_challenged.json": [],
+        "configs/methods/eval_extreme.json": [],
+        "configs/methods/eval_mocap.json": [],
+        "configs/methods/eval_nominal.json": [],
+        "configs/methods/eval_single.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 9,
+      "files": [
+        {
+          "path": "configs/nnio/basic.json",
+          "language": "json",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/nnio/image.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/nnio/sequence.json",
+          "language": "json",
+          "sizeLines": 24,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "configs/nnio/basic.json": [],
+        "configs/nnio/image.json": [],
+        "configs/nnio/sequence.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 10,
+      "files": [
+        {
+          "path": "configs/pilots/Iceman.json",
+          "language": "json",
+          "sizeLines": 73,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/pilots/Jester.json",
+          "language": "json",
+          "sizeLines": 31,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/pilots/Maverick.json",
+          "language": "json",
+          "sizeLines": 78,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/pilots/Rooster.json",
+          "language": "json",
+          "sizeLines": 73,
+          "fileCategory": "config"
+        },
+        {
+          "path": "configs/pilots/Viper.json",
+          "language": "json",
+          "sizeLines": 31,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "configs/pilots/Iceman.json": [],
+        "configs/pilots/Jester.json": [],
+        "configs/pilots/Maverick.json": [],
+        "configs/pilots/Rooster.json": [],
+        "configs/pilots/Viper.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 11,
+      "files": [
+        {
+          "path": ".gitmodules",
+          "language": "unknown",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".ua/.understandignore",
+          "language": "unknown",
+          "sizeLines": 75,
+          "fileCategory": "code"
+        },
+        {
+          "path": "configs/frames/carl.json",
+          "language": "json",
+          "sizeLines": 25,
+          "fileCategory": "config"
+        },
+        {
+          "path": "docs/index.html",
+          "language": "html",
+          "sizeLines": 309,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "docs/static/css/bulma.css.map.txt",
+          "language": "txt",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "docs/static/css/index.css",
+          "language": "css",
+          "sizeLines": 157,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "docs/static/js/bulma-carousel.js",
+          "language": "javascript",
+          "sizeLines": 2370,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/static/js/bulma-slider.js",
+          "language": "javascript",
+          "sizeLines": 460,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/static/js/index.js",
+          "language": "javascript",
+          "sizeLines": 78,
+          "fileCategory": "code"
+        },
+        {
+          "path": "notebooks/figs_examples.ipynb",
+          "language": "ipynb",
+          "sizeLines": 150,
+          "fileCategory": "code"
+        },
+        {
+          "path": "notebooks/sous_vide_examples.ipynb",
+          "language": "ipynb",
+          "sizeLines": 263,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/sousvide/flight/command_helper.py",
+          "language": "python",
+          "sizeLines": 163,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".gitmodules": [],
+        ".ua/.understandignore": [],
+        "configs/frames/carl.json": [],
+        "docs/index.html": [],
+        "docs/static/css/bulma.css.map.txt": [],
+        "docs/static/css/index.css": [],
+        "docs/static/js/bulma-carousel.js": [],
+        "docs/static/js/bulma-slider.js": [],
+        "docs/static/js/index.js": [],
+        "notebooks/figs_examples.ipynb": [],
+        "notebooks/sous_vide_examples.ipynb": [],
+        "src/sousvide/flight/command_helper.py": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

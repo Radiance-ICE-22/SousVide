@@ -1,0 +1,13 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "batchFiles": [
+    {"path": "configs/captures/default.json", "language": "json", "sizeLines": 8, "fileCategory": "config"},
+    {"path": "configs/captures/iphone15pro.json", "language": "json", "sizeLines": 23, "fileCategory": "config"},
+    {"path": "configs/captures/pixel8pro.json", "language": "json", "sizeLines": 23, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    "configs/captures/default.json": [],
+    "configs/captures/iphone15pro.json": [],
+    "configs/captures/pixel8pro.json": []
+  }
+}
