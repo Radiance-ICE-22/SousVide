@@ -38,7 +38,7 @@ class SIFU(BaseNet):
             networks.append(nn.Dropout(dropout))
 
             prev_size = layer_size
-        
+
         networks.append(nn.Linear(prev_size, io_sizes["ypd"]["parameters"]))
 
         # Class Variables
