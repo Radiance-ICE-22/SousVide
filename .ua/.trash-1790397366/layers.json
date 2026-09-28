@@ -1,0 +1,123 @@
+[
+  {
+    "id": "layer:control",
+    "name": "Control & Policy Networks",
+    "description": "Selectable policy network architectures (SVNet, PAVE, SIFU, DNNet, ViT feature extractors) built on a shared base_net abstraction, plus the factory, tensor helpers, and Pilot/Policy runtime classes that turn observations into drone flight commands.",
+    "nodeIds": [
+      "file:src/sousvide/control/network_factory.py",
+      "file:src/sousvide/control/network_helper.py",
+      "file:src/sousvide/control/networks/base_net.py",
+      "file:src/sousvide/control/networks/dnnet.py",
+      "file:src/sousvide/control/networks/feature_extractors.py",
+      "file:src/sousvide/control/networks/pave.py",
+      "file:src/sousvide/control/networks/sifu.py",
+      "file:src/sousvide/control/networks/svnet.py",
+      "file:src/sousvide/control/policy.py",
+      "file:src/sousvide/control/pilot.py"
+    ]
+  },
+  {
+    "id": "layer:flight",
+    "name": "Flight Deployment",
+    "description": "Real-world and FiGS-simulated flight execution: rollout deployment of trained pilots, MAVSDK-based drone/camera command dispatch, and flight-performance metric helpers.",
+    "nodeIds": [
+      "file:src/sousvide/flight/flight_helper.py",
+      "file:src/sousvide/flight/deploy_figs.py",
+      "file:src/sousvide/flight/command_helper.py"
+    ]
+  },
+  {
+    "id": "layer:instruct",
+    "name": "Training & Instruction",
+    "description": "Imitation-learning training loop for pilot policies, with mixture-of-experts loss functions and PyTorch dataset loaders over the synthesized flight data.",
+    "nodeIds": [
+      "file:src/sousvide/instruct/losses.py",
+      "file:src/sousvide/instruct/synthesized_data.py",
+      "file:src/sousvide/instruct/train_policy.py"
+    ]
+  },
+  {
+    "id": "layer:synthesize",
+    "name": "Data Synthesis",
+    "description": "Generation and compression of synthetic visual-inertial training data by rolling expert trajectories through Gaussian-splat scenes, including domain randomization and observation assembly.",
+    "nodeIds": [
+      "file:src/sousvide/synthesize/data_compress_helper.py",
+      "file:src/sousvide/synthesize/rollout_generator.py",
+      "file:src/sousvide/synthesize/synthesize_helper.py",
+      "file:src/sousvide/synthesize/observation_generator.py"
+    ]
+  },
+  {
+    "id": "layer:utility",
+    "name": "Shared Utilities & Visualization",
+    "description": "Cross-cutting flight-dynamics and numerical helpers plus the matplotlib plotting, Rich console reporting, and flight-recording utilities that the control, flight, synthesize, and instruct layers all draw on.",
+    "nodeIds": [
+      "file:src/sousvide/visualize/plot_3D.py",
+      "file:src/sousvide/visualize/plot_learning.py",
+      "file:src/sousvide/visualize/plot_synthesize.py",
+      "file:src/sousvide/visualize/plot_time.py",
+      "file:src/sousvide/visualize/plot_utilities.py",
+      "file:src/sousvide/visualize/rich_utilities.py",
+      "file:src/sousvide/visualize/record_flight.py",
+      "file:src/sousvide/utilities/sousvide_utilities.py"
+    ]
+  },
+  {
+    "id": "layer:config",
+    "name": "Configuration",
+    "description": "JSON configuration data that parameterizes the code: camera capture profiles, flight courses, data-generation and evaluation methods, neural-network I/O schemas, pilot definitions, and drone/scene frames.",
+    "nodeIds": [
+      "config:configs/captures/default.json",
+      "config:configs/captures/iphone15pro.json",
+      "config:configs/captures/pixel8pro.json",
+      "config:configs/courses/button_prod.json",
+      "config:configs/courses/circuit.json",
+      "config:configs/courses/infinity.json",
+      "config:configs/courses/traverse.json",
+      "config:configs/methods/data_alpha.json",
+      "config:configs/methods/data_beta.json",
+      "config:configs/methods/data_gamma.json",
+      "config:configs/methods/eval_challenged.json",
+      "config:configs/methods/eval_extreme.json",
+      "config:configs/methods/eval_mocap.json",
+      "config:configs/methods/eval_nominal.json",
+      "config:configs/methods/eval_single.json",
+      "config:configs/nnio/basic.json",
+      "config:configs/nnio/image.json",
+      "config:configs/nnio/sequence.json",
+      "config:configs/pilots/Iceman.json",
+      "config:configs/pilots/Jester.json",
+      "config:configs/pilots/Maverick.json",
+      "config:configs/pilots/Rooster.json",
+      "config:configs/pilots/Viper.json",
+      "config:configs/frames/carl.json"
+    ]
+  },
+  {
+    "id": "layer:documentation",
+    "name": "Documentation & Examples",
+    "description": "The project's GitHub Pages website (HTML, CSS, and vendored Bulma carousel/slider JavaScript) together with the Jupyter notebooks that demonstrate FiGS simulation and the SousVide training pipeline end to end.",
+    "nodeIds": [
+      "file:docs/index.html",
+      "document:docs/static/css/bulma.css.map.txt",
+      "file:docs/static/css/index.css",
+      "file:docs/static/js/bulma-carousel.js",
+      "file:docs/static/js/bulma-slider.js",
+      "file:docs/static/js/index.js",
+      "file:notebooks/figs_examples.ipynb",
+      "file:notebooks/sous_vide_examples.ipynb"
+    ]
+  },
+  {
+    "id": "layer:project-metadata",
+    "name": "Project Metadata & Environment",
+    "description": "Repository-level README, Python packaging metadata, the Conda environment specification, the FiGS git submodule wiring, and tooling ignore rules that define how the research codebase is built and run.",
+    "nodeIds": [
+      "document:README.md",
+      "config:environment_x86.yml",
+      "config:pyproject.toml",
+      "file:.gitmodules",
+      "file:.ua/.understandignore"
+    ]
+  }
+]

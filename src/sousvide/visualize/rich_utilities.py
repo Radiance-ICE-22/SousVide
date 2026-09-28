@@ -1,12 +1,23 @@
 import numpy as np
 
-from rich import get_console
+from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, TimeRemainingColumn
 from rich.table import Table
 
 from typing import Tuple,List
 
-console = get_console()
+# force_jupyter=False: rich's default Jupyter auto-detection renders progress bars
+# through IPython's display/widget machinery, which fights with %matplotlib widget
+# (ipympl) and Open3D's Jupyter WebRTC visualizer over the same comm channel and can
+# manifest as a RecursionError deep inside IPython's display formatter. Plain
+# ANSI progress bars print fine as ordinary cell output without that conflict.
+console = Console(force_jupyter=False)
+
+def get_console() -> Console:
+    """
+    Return the shared rich Console used across sousvide (Jupyter rendering disabled - see above).
+    """
+    return console
 
 def get_generation_progress() -> Progress:
     """

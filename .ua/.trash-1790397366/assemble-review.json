@@ -1,0 +1,19 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 1,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Incremental merge: batch-existing.json (136 nodes / 296 edges) carried over, batch-1.json (4 nodes / 6 edges) for src/sousvide/control/networks/sifu.py. No corrections, dropped items or dangling edges reported by the merge script; independent verification confirms this.",
+    "Integrity checks all clean: no duplicate node IDs, no duplicate (source,target,type) edge keys, no dangling edge endpoints, no self-edges, no id/type prefix mismatches, no missing required fields, all complexity values in {simple,moderate,complex}, all edge types valid, all edges carry direction+weight.",
+    "Import map fully satisfied: all 65 importMap entries resolve to existing file nodes and every corresponding `imports` edge is present. Zero speculative edges added.",
+    "Recovered the dropped cross-file call from sifu.py: `calls function:src/sousvide/control/networks/sifu.py:SIFU.__init__ -> class:src/sousvide/control/networks/base_net.py:BaseNet` (weight 0.8). Verified in source: SIFU.__init__ calls super().__init__() at line 24 and self.get_io_sizes() at line 26.",
+    "Deliberately did NOT create `function:src/sousvide/control/networks/base_net.py:get_io_sizes`. base_net.py was analyzed at class-level granularity only (as were dnnet.py, pave.py, svnet.py, feature_extractors.py, pilot.py, policy.py, record_flight.py), and the graph's established convention puts the class node as the endpoint for method-level calls -- e.g. `calls class:base_net.py:BaseNet -> function:network_helper.py:get_io_sizes`. Six existing `calls` edges already target class nodes, so retargeting to BaseNet is convention-consistent. Creating a lone synthetic method node would also collide by name with the real `function:src/sousvide/control/network_helper.py:get_io_sizes` node.",
+    "GRANULARITY INCONSISTENCY (upstream, not fixed): sifu.py is now the only class-bearing file with method-level function nodes (SIFU.__init__, SIFU.forward). All other class files expose only the class node. The freshly analyzed batch used finer granularity than the carried-over graph. Nodes were kept because finer detail is more informative than the baseline, but this asymmetry will be visible in the dashboard and means method-level calls elsewhere are still summarized onto class nodes. Worth normalizing the file-analyzer's granularity policy before the next full rebuild.",
+    "Root cause of the dropped edge: the file-analyzer filters candidate call targets against the neighborMap's exported symbols, which lists only top-level exports. Inherited/parent-class methods (`self.<method>()` resolved via a base class) are therefore never matched, so cross-file calls into superclass methods are systematically dropped. This affects every BaseNet subclass, not just sifu.py.",
+    "SIFU.forward makes no cross-file calls (torch only), so no further recovery applies. No other cross-file call or inherit edges from sifu.py were dropped.",
+    "Pre-existing orphan nodes with no edges (carried over, unrelated to this change, left untouched): file:notebooks/sous_vide_examples.ipynb, file:.ua/.understandignore, document:docs/static/css/bulma.css.map.txt, file:.gitmodules."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "projectRoot": "/home/yutharsan/FYP/SousVide",
+  "batchFiles": [
+    {"path": "src/sousvide/control/networks/sifu.py", "language": "python", "sizeLines": 70, "fileCategory": "code"}
+  ],
+  "batchImportData": {"src/sousvide/control/networks/sifu.py":["src/sousvide/control/networks/base_net.py"]}
+}

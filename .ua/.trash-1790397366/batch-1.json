@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/sousvide/control/networks/sifu.py",
+      "type": "file",
+      "name": "sifu.py",
+      "filePath": "src/sousvide/control/networks/sifu.py",
+      "summary": "Defines the SIFU (Sequence Into Features Unified) network, a PyTorch MLP that maps flattened dynamics history sequences to a feature vector plus estimated drone parameters (mass and thrust coefficient). Used as one of the selectable policy networks in the sousvide control stack.",
+      "tags": [
+        "neural-network",
+        "data-model",
+        "pytorch",
+        "feature-extraction",
+        "control"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Uses a dict-in/dict-out forward signature and slices nn.Sequential (self.networks[:-1]) so the penultimate activations double as a runtime feature vector while the final layer supplies the training-time parameter regression head."
+    },
+    {
+      "id": "class:src/sousvide/control/networks/sifu.py:SIFU",
+      "type": "class",
+      "name": "SIFU",
+      "filePath": "src/sousvide/control/networks/sifu.py",
+      "lineRange": [
+        6,
+        71
+      ],
+      "summary": "BaseNet subclass implementing a configurable fully connected MLP over dynamics history sequences, exposing both an intermediate feature vector and a drone-parameter regression output.",
+      "tags": [
+        "neural-network",
+        "mlp",
+        "subclass",
+        "pytorch",
+        "data-model"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/control/networks/sifu.py:SIFU.__init__",
+      "type": "function",
+      "name": "SIFU.__init__",
+      "filePath": "src/sousvide/control/networks/sifu.py",
+      "lineRange": [
+        7,
+        45
+      ],
+      "summary": "Builds the MLP by reading input/output sizes from the parent BaseNet and stacking Linear/ReLU/Dropout blocks for each configured hidden size, capped by a final linear parameter head.",
+      "tags": [
+        "constructor",
+        "network-builder",
+        "configuration",
+        "pytorch"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/sousvide/control/networks/sifu.py:SIFU.forward",
+      "type": "function",
+      "name": "SIFU.forward",
+      "filePath": "src/sousvide/control/networks/sifu.py",
+      "lineRange": [
+        47,
+        71
+      ],
+      "summary": "Flattens the dynamics input tensor, runs it through all but the last layer to produce the feature vector, then applies the final layer to obtain parameter estimates, returning both in a dictionary.",
+      "tags": [
+        "forward-pass",
+        "inference",
+        "pytorch",
+        "serialization"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/sousvide/control/networks/sifu.py",
+      "target": "file:src/sousvide/control/networks/base_net.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/sousvide/control/networks/sifu.py",
+      "target": "class:src/sousvide/control/networks/sifu.py:SIFU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/sousvide/control/networks/sifu.py",
+      "target": "function:src/sousvide/control/networks/sifu.py:SIFU.__init__",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/sousvide/control/networks/sifu.py",
+      "target": "function:src/sousvide/control/networks/sifu.py:SIFU.forward",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/sousvide/control/networks/sifu.py",
+      "target": "class:src/sousvide/control/networks/sifu.py:SIFU",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "class:src/sousvide/control/networks/sifu.py:SIFU",
+      "target": "class:src/sousvide/control/networks/base_net.py:BaseNet",
+      "type": "inherits",
+      "direction": "forward",
+      "weight": 0.9
+    }
+  ]
+}

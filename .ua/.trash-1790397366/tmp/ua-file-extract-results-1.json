@@ -1,0 +1,117 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 1,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 1,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/sousvide/control/networks/sifu.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "SIFU",
+          "startLine": 6,
+          "endLine": 71,
+          "methods": [
+            "__init__",
+            "forward"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SIFU",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "super(SIFU, self).__init__",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "super",
+          "lineNumber": 23
+        },
+        {
+          "caller": "__init__",
+          "callee": "self.get_io_sizes",
+          "lineNumber": 26
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 36
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.ReLU",
+          "lineNumber": 37
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Dropout",
+          "lineNumber": 38
+        },
+        {
+          "caller": "__init__",
+          "callee": "networks.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Linear",
+          "lineNumber": 42
+        },
+        {
+          "caller": "__init__",
+          "callee": "nn.Sequential",
+          "lineNumber": 45
+        },
+        {
+          "caller": "forward",
+          "callee": "torch.flatten",
+          "lineNumber": 62
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

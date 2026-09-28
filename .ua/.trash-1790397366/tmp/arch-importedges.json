@@ -1,0 +1,339 @@
+[
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/network_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/dnnet.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/feature_extractors.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/pave.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/svnet.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/base_net.py",
+  "target": "file:src/sousvide/control/network_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/dnnet.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/feature_extractors.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/pave.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/svnet.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/policy.py",
+  "target": "file:src/sousvide/control/network_factory.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/policy.py",
+  "target": "file:src/sousvide/control/network_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/policy.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/policy.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_3D.py",
+  "target": "file:src/sousvide/visualize/plot_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_learning.py",
+  "target": "file:src/sousvide/flight/flight_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_learning.py",
+  "target": "file:src/sousvide/visualize/plot_3D.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_learning.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_synthesize.py",
+  "target": "file:src/sousvide/visualize/plot_3D.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_synthesize.py",
+  "target": "file:src/sousvide/visualize/plot_time.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_synthesize.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/visualize/plot_time.py",
+  "target": "file:src/sousvide/visualize/plot_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/control/pilot.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/flight/flight_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/synthesize/synthesize_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/utilities/sousvide_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/visualize/record_flight.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/flight/deploy_figs.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/rollout_generator.py",
+  "target": "file:src/sousvide/synthesize/data_compress_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/rollout_generator.py",
+  "target": "file:src/sousvide/synthesize/synthesize_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/rollout_generator.py",
+  "target": "file:src/sousvide/utilities/sousvide_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/rollout_generator.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/pilot.py",
+  "target": "file:src/sousvide/control/policy.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/control/pilot.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/control/policy.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/flight/deploy_figs.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/instruct/losses.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/instruct/synthesized_data.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/synthesize/observation_generator.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/instruct/train_policy.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/observation_generator.py",
+  "target": "file:src/sousvide/control/network_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/observation_generator.py",
+  "target": "file:src/sousvide/control/pilot.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/observation_generator.py",
+  "target": "file:src/sousvide/synthesize/data_compress_helper.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/synthesize/observation_generator.py",
+  "target": "file:src/sousvide/visualize/rich_utilities.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/networks/sifu.py",
+  "target": "file:src/sousvide/control/networks/base_net.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7
+ },
+ {
+  "source": "file:src/sousvide/control/network_factory.py",
+  "target": "file:src/sousvide/control/networks/sifu.py",
+  "type": "imports",
+  "direction": "forward",
+  "weight": 0.7,
+  "recoveredFromImportMap": true
+ }
+]

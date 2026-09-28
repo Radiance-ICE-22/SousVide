@@ -1,0 +1,33 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'file:.gitmodules' has no edges (orphan)",
+    "Node 'file:.ua/.understandignore' has no edges (orphan)",
+    "Node 'document:docs/static/css/bulma.css.map.txt' has no edges (orphan)",
+    "Node 'file:notebooks/sous_vide_examples.ipynb' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 140,
+    "totalEdges": 304,
+    "totalLayers": 8,
+    "tourSteps": 14,
+    "nodeTypes": {
+      "file": 37,
+      "function": 63,
+      "class": 12,
+      "document": 2,
+      "config": 26
+    },
+    "edgeTypes": {
+      "imports": 48,
+      "contains": 75,
+      "exports": 73,
+      "calls": 58,
+      "inherits": 6,
+      "depends_on": 12,
+      "related": 18,
+      "documents": 1,
+      "configures": 13
+    }
+  }
+}
